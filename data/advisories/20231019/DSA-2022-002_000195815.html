@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en-US" data-placeholder-focus="false" class="pageFlicker">
+<head>
+    <meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=8; IE=Edge,chrome=1" /><meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://supportkb.dell.com"><link rel="preconnect" href="https://players.brightcove.net">
+    
+            <title>DSA-2022-002: Dell EMC PowerScale OneFS Security Update for Multiple Vulnerabilities | Dell US</title>
+        
+    
+
+            <meta name="robots" content="noindex, nofollow">
+
+                    <meta name="author" content="Dell US" />
+                    <meta name="LANGUAGE" content="en" />
+                    <meta name="DOCUMENTCOUNTRYCODE" content="us" />
+                    <meta name="CUSTOMERSET" content="04" />
+                    <meta name="SEGMENT" content="bsd" />
+                    <meta name="cms" content="FUEL" />
+                    <meta name="generator" content="mse-responsive" />
+                    <meta name="PAGENAME" content="us|en|04|bsd|esupport-kbdoc|kbarticle|print" />
+        
+    
+<script type="text/javascript" nonce="NjM4MzMzMDY3MDYxOTEyODI00">
+        Dell = window.Dell || {};
+        Dell.Metrics = Dell.Metrics || {};
+        Dell.Metrics.sc = Dell.Metrics.sc || {};
+        Dell.OnlineUtils = Dell.OnlineUtils || {};
+        Dell.OnlineUtils.AppSettings = Dell.OnlineUtils.AppSettings || {};
+        Dell.OnlineUtils.lwp = Dell.OnlineUtils.lwp || {};
+        Dell.OnlineUtils.Lwp = { country: 'us', language: 'en', segment: 'bsd', customerset: '04', region: 'us' };
+        var accountInfoUrl = '';
+        function ProductImageSrcFallback(self, fallBackSrc) {
+            self.src = fallBackSrc;
+            self.onerror = null;
+        }
+        var emcCultureCode = 'en_US';
+        var BeaconUrl = 'https://boomerang.dell.com/api/beacon';
+        var BoomerangUrl = 'https://www.dellcdn.com/support/staticcdn/external/js/boomerang/1.1/boomerang.min.js';
+        var countryLocalizedSoit = true;
+
+        Dell.Metrics.sc.country = 'us';
+        Dell.Metrics.sc.language = 'en';
+        Dell.Metrics.sc.segment = 'bsd';
+        Dell.Metrics.sc.customerset = '04';
+        Dell.Metrics.sc.region = 'us';
+        Dell.Metrics.sc.cms = "Fuel";
+        Dell.Metrics.sc.pagename = "us|en|04|bsd|kbdoc|print";
+        var enableGeolocation = true;
+</script>
+    <script type="application/x-suppress" data-src="https://www.dellcdn.com/support/documentationcdn/dds/js/2.23.0/dds.min.js" data-nonce="NjM4MzMzMDY3MDYxOTEyODI00" crossorigin="anonymous"></script>
+    <link rel="stylesheet" crossorigin href="https://www.dellcdn.com/support/documentationcdn/dds/css/2.24.0/dds.min.css" />
+    
+<link rel="preload" href="/iUXVjXm42/y6ATRsP/sQ/tY3QhG7bEuOa/PRc4N0sKYQk/HDw5Vl4-/ECAB" as="script" type="text/javascript" fetchpriority="low"></head>
+<body id="top">
+    
+        <script async type="text/javascript" src="https://www.dellcdn.com/boomerang/latest/boomerang-support-full.min.js" nonce="NjM4MzMzMDY3MDYxOTEyODI00"></script>
+    
+    <div>
+
+<script type="application/x-suppress" data-src="https://www.dellcdn.com/support/kbdoc/bundle/js/1.6/kb.min.js" crossorigin="anonymous"></script>
+
+
+
+<link rel="stylesheet" href="https://www.dellcdn.com/support/kbdoc/bundle/css/1.5/kb.min.css" crossorigin="anonymous" />
+
+<div class="dds__pt-4 position-relative">
+    <div class="dds__container">
+            <!-- header-->
+             
+<div class="dds__d-flex dds__flex-column dds__flex-md-row dds__justify-content-between dds__align-items-md-center">
+    <p class="dds__mb-2 dds__mb-md-0">Article Number: 000195815</p>
+    <div class="dds__d-flex dds__flex-wrap">
+        <button id="btnKbArticlesAddheaderPrint" class="dds__border-0 dds__button dds__button--md dds__button--secondary">
+            <i class="dds__icon dds__icon--printer" aria-hidden="true"></i>
+            <span class="Content-Space-buttons icon-hide"> Print</span>
+        </button>        
+    </div>
+</div>
+<hr class="dds__mt-4 dds__mb-4">
+
+
+<h1 class="dds__mb-4 article-header-Text">DSA-2022-002: Dell EMC PowerScale OneFS Security Update for Multiple Vulnerabilities</h1>
+<h4 class="dds__mb-4 article-header-Summary">
+        <span>Summary:</span>
+        <span>Dell EMC PowerScale OneFS remediation is available for multiple vulnerabilities that may be exploited by malicious users to compromise the affected system.</span>
+</h4>
+<script type="text/javascript" nonce="NjM4MzMzMDY3MDYxOTEyODI00">
+    document.getElementById("btnKbArticlesAddheaderPrint").onclick = function() { window.print(); };
+</script>
+            <!-- Article Content -->
+            <h3 id="article-content" class="dds__mb-0 h4-heading dds__h4">Article Content</h3>
+            <hr class="dds__mb-4">
+                <div id="tabcontent" class="lkbContentFormat printContent">
+            
+
+    <h6 class="dds__mb-4 content-heading">Impact</h6>
+    <p class="dds__mb-4 content-heading_details">High</p>
+    <h6 class="dds__mb-4 content-heading">Details</h6>
+        <div class="dds__mb-4 content-heading_details"><table>
+   <thead>
+    <tr>
+     <td colspan="1" rowspan="1"><b>Proprietary Code CVEs</b></td>
+     <td colspan="1" rowspan="1"><b>Description</b></td>
+     <td colspan="1" rowspan="1"><b>CVSS Base Score</b></td>
+     <td colspan="1" rowspan="1"><b>CVSS Vector String</b></td>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td colspan="1" rowspan="1">CVE-2022-22561</td>
+     <td colspan="1" rowspan="1">Dell PowerScale OneFS, versions 8.2.x-9.3.0.x, contain an improper restriction of excessive authentication attempts. An unauthenticated remote attacker may potentially exploit this vulnerability, leading to compromised accounts.</td>
+     <td colspan="1" rowspan="1">8.1</td>
+     <td colspan="1" rowspan="1"><a href="https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:A/AC:H/PR:L/UI:R/S:C/C:H/I:H/A:H" target="_blank">CVSS:3.1/AV:A/AC:H/PR:L/UI:R/S:C/C:H/I:H/A:H</a></td>
+    </tr>
+    <tr>
+     <td colspan="1" rowspan="1">CVE-2022-22549</td>
+     <td colspan="1" rowspan="1">Dell PowerScale OneFS, 8.2.x-9.3.x, contain an Improper Certificate Validation. A unauthenticated remote attacker may potentially exploit this vulnerability, leading to a man-in-the-middle capture of administrative credentials.</td>
+     <td colspan="1" rowspan="1">7.5</td>
+     <td colspan="1" rowspan="1"><a href="https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H" target="_blank">CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H</a></td>
+    </tr>
+    <tr>
+     <td colspan="1" rowspan="1">CVE-2022-22559</td>
+     <td colspan="1" rowspan="1">Dell PowerScale OneFS, version 9.3.0, contains a use of a broken or risky cryptographic algorithm. An unprivileged network attacker may exploit this vulnerability, leading to the potential for information disclosure.</td>
+     <td colspan="1" rowspan="1">7.5</td>
+     <td colspan="1" rowspan="1"><a href="https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N" target="_blank">CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N</a></td>
+    </tr>
+    <tr>
+     <td colspan="1" rowspan="1">CVE-2022-22562</td>
+     <td colspan="1" rowspan="1">Dell PowerScale OneFS, versions 8.2.0-9.2.1.x, contain an improper handling of missing values vulnerability. An unauthenticated network attacker may potentially exploit this denial-of-service vulnerability.</td>
+     <td colspan="1" rowspan="1">7.5</td>
+     <td colspan="1" rowspan="1"><a href="https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H" target="_blank">CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H</a></td>
+    </tr>
+    <tr>
+     <td colspan="1" rowspan="1">CVE-2022-22560</td>
+     <td colspan="1" rowspan="1">Dell EMC PowerScale OneFS versions 8.1.x-9.2.1.x&nbsp;contain hard coded credentials. This may allow a local user with knowledge of the credentials to login as the admin user to the backend ethernet switch of a PowerScale cluster. The attacker may exploit this vulnerability to take the switch offline.</td>
+     <td colspan="1" rowspan="1">7.1</td>
+     <td colspan="1" rowspan="1"><a href="https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:H" target="_blank">CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:H</a></td>
+    </tr>
+    <tr>
+     <td colspan="1" rowspan="1">CVE-2022-22550</td>
+     <td colspan="1" rowspan="1">Dell PowerScale OneFS, versions 8.2.2-9.3.0.x, contain a password disclosure vulnerability. An unprivileged local attacker may potentially exploit this vulnerability, leading to account takeover.</td>
+     <td colspan="1" rowspan="1">6.7</td>
+     <td colspan="1" rowspan="1"><a href="https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H" target="_blank">CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H</a></td>
+    </tr>
+    <tr>
+     <td colspan="1" rowspan="1">CVE-2022-22565</td>
+     <td colspan="1" rowspan="1">Dell PowerScale OneFS, versions 9.0.0-9.3.0 contain an improper authorization of index containing sensitive information. An authenticated and privileged user may potentially exploit this vulnerability, leading to disclosure or modification of sensitive data.</td>
+     <td colspan="1" rowspan="1">4.7</td>
+     <td colspan="1" rowspan="1"><a href="https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:L/I:L/A:L" target="_blank">CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:L/I:L/A:L</a></td>
+    </tr>
+   </tbody>
+  </table> &nbsp; 
+  <table>
+   <tbody>
+    <tr>
+     <td colspan="1" rowspan="1"><b>Third-party Component</b></td>
+     <td colspan="1" rowspan="1"><b>CVEs</b></td>
+     <td colspan="1" rowspan="1"><b>More information</b></td>
+    </tr>
+    <tr>
+     <td colspan="1" rowspan="1">GNU gettext</td>
+     <td colspan="1" rowspan="1">CVE-2018-18751</td>
+     <td colspan="1" rowspan="1"><a href="https://nvd.nist.gov/vuln/detail/CVE-2018-18751" target="_blank">https://nvd.nist.gov/vuln/detail/CVE-2018-18751</a>&nbsp;<br> <a href="https://www.gnu.org/software/gettext/" target="_blank">https://www.gnu.org/software/gettext/</a>&nbsp;</td>
+    </tr>
+    <tr>
+     <td colspan="1" rowspan="1">OpenSSL</td>
+     <td colspan="1" rowspan="1">CVE-2021-3712</td>
+     <td colspan="1" rowspan="1"><a href="https://nvd.nist.gov/vuln/detail/CVE-2021-3712" target="_blank">https://nvd.nist.gov/vuln/detail/CVE-2021-3712</a>&nbsp;<br> <a href="https://www.openssl.org/news/secadv/20210824.txt" target="_blank">https://www.openssl.org/news/secadv/20210824.txt</a>&nbsp;</td>
+    </tr>
+    <tr>
+     <td colspan="1" rowspan="1">Apache</td>
+     <td colspan="1" rowspan="1">Multiple</td>
+     <td colspan="1" rowspan="1"><a href="https://httpd.apache.org/security/vulnerabilities_24.html" target="_blank">https://httpd.apache.org/security/vulnerabilities_24.html</a></td>
+    </tr>
+   </tbody>
+  </table> 
+  <br></div>
+    <div class="callout-important dds__message-bar dds__mb-4">
+        <i class="dds__icon dds__message-bar__icon dds__icon--alert-notice dds__align-middle" aria-hidden="true"></i>
+        <span class="m-0">Dell Technologies recommends all customers consider both the CVSS base score and any relevant temporal and environmental scores that may impact the potential severity associated with a particular security vulnerability.</span>
+    </div>
+    <h6 class="dds__mb-4 content-heading">Affected Products and Remediation</h6>
+    <p class="dds__mb-4 content-heading_details"><table>
+   <tbody>
+    <tr>
+     <td colspan="1" rowspan="1"><b>CVEs Addressed</b></td>
+     <td colspan="1" rowspan="1"><b>Affected Versions</b></td>
+     <td colspan="1" rowspan="1"><b>Updated Versions</b></td>
+     <td colspan="1" rowspan="1"><b>Link to Update</b></td>
+    </tr>
+    <tr>
+     <td colspan="1" rowspan="2">CVE-2022-22561</td>
+     <td colspan="1" rowspan="1">8.2.x, 9.0.0.x, 9.1.1.x, and 9.2.0.x</td>
+     <td colspan="1" rowspan="1">Upgrade your version of OneFS</td>
+     <td colspan="1" rowspan="20"><a href="https://www.dell.com/support/home/en-ie/product-support/product/isilon-onefs/drivers" target="_blank">PowerScale OneFS Downloads Area</a><br> <br> <br> <br> <br> &nbsp;</td>
+    </tr>
+    <tr>
+     <td colspan="1" rowspan="1">9.1.0.x,&nbsp;9.2.1.x, and 9.3.0.x</td>
+     <td colspan="1" rowspan="1">Download and install the latest RUP</td>
+    </tr>
+    <tr>
+     <td colspan="1" rowspan="2">CVE-2022-22549</td>
+     <td colspan="1" rowspan="1">8.2.x, 9.0.0.x, 9.1.1.x, and 9.2.0.x</td>
+     <td colspan="1" rowspan="1">Upgrade your version of OneFS</td>
+    </tr>
+    <tr>
+     <td colspan="1" rowspan="1">9.1.0.x,&nbsp;9.2.1.x, and 9.3.0.x</td>
+     <td colspan="1" rowspan="1">Download and install the latest RUP</td>
+    </tr>
+    <tr>
+     <td colspan="1" rowspan="2">CVE-2022-22559</td>
+     <td colspan="1" rowspan="1">n/a</td>
+     <td colspan="1" rowspan="1">Upgrade your version of OneFS</td>
+    </tr>
+    <tr>
+     <td colspan="1" rowspan="1">9.3.0.x</td>
+     <td colspan="1" rowspan="1">Download and install the latest RUP</td>
+    </tr>
+    <tr>
+     <td colspan="1" rowspan="2">CVE-2022-22562</td>
+     <td colspan="1" rowspan="1">8.2.x, 9.0.0.x, 9.1.1.x, and 9.2.0.x</td>
+     <td colspan="1" rowspan="1">Upgrade your version of OneFS</td>
+    </tr>
+    <tr>
+     <td colspan="1" rowspan="1">9.1.0.x and 9.2.1.x</td>
+     <td colspan="1" rowspan="1">Download and install the latest RUP</td>
+    </tr>
+    <tr>
+     <td colspan="1" rowspan="2">CVE-2022-22560</td>
+     <td colspan="1" rowspan="1">8.2.x, 9.0.0.x, 9.1.1.x, and 9.2.0.x</td>
+     <td colspan="1" rowspan="1">Upgrade your version of OneFS</td>
+    </tr>
+    <tr>
+     <td colspan="1" rowspan="1">9.1.0.x and 9.2.1.x</td>
+     <td colspan="1" rowspan="1">Download and install the latest RUP</td>
+    </tr>
+    <tr>
+     <td colspan="1" rowspan="2">CVE-2022-22550</td>
+     <td colspan="1" rowspan="1">8.2.x, 9.0.0.x, 9.1.1.x, and 9.2.0.x</td>
+     <td colspan="1" rowspan="1">Upgrade your version of OneFS</td>
+    </tr>
+    <tr>
+     <td colspan="1" rowspan="1">9.1.0.x, 9.2.1.x, and 9.3.0.x</td>
+     <td colspan="1" rowspan="1">Download and install the latest RUP</td>
+    </tr>
+    <tr>
+     <td colspan="1" rowspan="2">CVE-2018-18751</td>
+     <td colspan="1" rowspan="1">8.2.x, 9.0.0.x, 9.1.1.x, and 9.2.0.x</td>
+     <td colspan="1" rowspan="1">Upgrade your version of OneFS</td>
+    </tr>
+    <tr>
+     <td colspan="1" rowspan="1">9.1.0.x, 9.2.1.x, and 9.3.0.x</td>
+     <td colspan="1" rowspan="1">Download and install the latest RUP</td>
+    </tr>
+    <tr>
+     <td colspan="1" rowspan="2">CVE-2021-3712</td>
+     <td colspan="1" rowspan="1">8.2.x, 9.0.0.x, 9.1.1.x, and 9.2.0.x</td>
+     <td colspan="1" rowspan="1">Upgrade your version of OneFS</td>
+    </tr>
+    <tr>
+     <td colspan="1" rowspan="1">9.1.0.x, 9.2.1.x, and 9.3.0.x</td>
+     <td colspan="1" rowspan="1">Download and install the latest RUP</td>
+    </tr>
+    <tr>
+     <td colspan="1" rowspan="2">Apache: Multiple</td>
+     <td colspan="1" rowspan="1">8.2.x, 9.0.0.x, 9.1.1.x, 9.2.0.x</td>
+     <td colspan="1" rowspan="1">Upgrade your version of OneFS</td>
+    </tr>
+    <tr>
+     <td colspan="1" rowspan="1">9.1.0.x, 9.2.1.x, 9.3.0.x</td>
+     <td colspan="1" rowspan="1">Download and install the latest RUP</td>
+    </tr>
+    <tr>
+     <td colspan="1" rowspan="2">CVE-2022-22565</td>
+     <td colspan="1" rowspan="1">8.2.x, 9.0.0.x, 9.1.1.x, and 9.2.0.x</td>
+     <td colspan="1" rowspan="1">Upgrade your version of OneFS</td>
+    </tr>
+    <tr>
+     <td colspan="1" rowspan="1">9.1.0.x, 9.2.1.x, and 9.3.0.x</td>
+     <td colspan="1" rowspan="1">Download and install the latest RUP</td>
+    </tr>
+   </tbody>
+  </table> 
+  <br>Note:&nbsp;The table above may not be a comprehensive list of all affected supported versions and may be updated as more information becomes available.
+  <br></p>
+    <h6 class="dds__mb-4 content-heading">Revision History</h6>
+    <p class="dds__mb-4 content-heading_details"><table><thead><tr><td colspan="1" rowspan="1"><b>Revision</b></td><td colspan="1" rowspan="1"><b>Date</b></td><td colspan="1" rowspan="1"><b>Description</b></td></tr></thead><tbody><tr><td colspan="1" rowspan="1">1.0</td><td colspan="1" rowspan="1">2022-01-31</td><td colspan="1" rowspan="1">Initial Release</td></tr></tbody></table></p>
+    <h6 class="dds__mb-4 content-heading">Related Information</h6>
+    <p class="dds__mb-4 content-heading_details">
+        <a href="//www.dell.com/support/security/en-us/" target="_blank" rel="noopener" title="Dell Security Advisories and Notices">Dell Security Advisories and Notices</a><br /><a href="//www.dell.com/support/contents/en-us/article/product-support/self-support-knowledgebase/security-antivirus/alerts-vulnerabilities/dell-vulnerability-response-policy" target="_blank" rel="noopener" title="Dell Vulnerability Response Policy">Dell Vulnerability Response Policy</a><br /><a href="https://www.first.org/cvss/user-guide" target="_blank" rel="noopener" title="CVSS Scoring Guide">CVSS Scoring Guide</a>
+    </p>
+
+
+            
+
+
+
+
+    </div>
+
+
+            <!-- Severity Disclaimer Tab Content -->
+                
+                <!-- Legal Information Tab Content -->
+                <h4 id="legal-information" class="dds__mb-0 h4-heading header_mt">Legal Information</h4>
+                <hr class="dds__mb-8" />
+                
+    <p class="dds__mb-5 content-heading_details">The information in this Dell Technologies Security Advisory should be read and used to assist in avoiding situations that may arise from the problems described herein. Dell Technologies distributes Security Advisories to bring important security information to the attention of users of the affected product(s). Dell Technologies assesses the risk based on an average of risks across a diverse set of installed systems and may not represent the actual risk to your local installation and individual environment. It is recommended that all users determine the applicability of this information to their individual environments and take appropriate actions. The information set forth herein is provided "as is" without warranty of any kind. Dell Technologies expressly disclaims all warranties, either express or implied, including the warranties of merchantability, fitness for a particular purpose, title and non-infringement. In no event shall Dell Technologies, its affiliates or suppliers, be liable for any damages whatsoever arising from or related to the information contained herein or actions that you decide to take based thereon, including any direct, indirect, incidental, consequential, loss of business profits or special damages, even if Dell Technologies, its affiliates or suppliers have been advised of the possibility of such damages. Some states do not allow the exclusion or limitation of liability for consequential or incidental damages, so the foregoing limitation shall apply to the extent permissible under law.</p>
+
+            <!--<div class="tab-pane fade minHeight" id="legal-information" role="tabpanel" aria-labeledby="legal-information-tab">-->
+            <!-- Mobile -->
+            <!--</div>-->
+            <!-- Technical Advisory Information -->
+            <!-- Article Properties Tab Content -->
+            <h4 id="article-properties" class="dds__mb-0 h4-heading header_mt">Article Properties</h4>
+            <hr class="dds__mb-4">
+            
+    <h6 class="dds__mb-2 content-heading_prop">Affected Product</h6>
+    <p class="dds__mb-4 content-heading_details">
+        PowerScale OneFS, Product Security Information
+
+    </p>
+
+    <h6 class="dds__mb-2 content-heading_prop">Last Published Date</h6>
+    <p class="dds__mb-4 content-heading_details">
+31 Jan 2022    </p>
+
+    <h6 class="dds__mb-2 content-heading_prop">Version</h6>
+    <p class="dds__mb-4 content-heading_details">1</p>
+    <h6 class="dds__mb-2 content-heading_prop">Article Type</h6>
+    <p class="dds__mb-4 content-heading_details">
+        Dell Security Advisory
+
+    </p>
+  
+    </div>
+</div>
+<script type="application/x-suppress" data-nonce="NjM4MzMzMDY3MDYxOTEyODI00">
+    $('document').ready(function () {
+        Dell.Metrics.sc.servicetag = ''; //s_dell.prop17
+        var serialnum = '' != null ? ''.split('|')[0] : '';
+        var tagid = '' != null ? ''.split('|')[1] : '';
+        if (serialnum != '') {
+            Dell.Metrics.sc.emcserialnum = serialnum; //s_dell.prop51
+        }
+        if (tagid != '') {
+            Dell.Metrics.sc.emcproducts = tagid; //s_dell.prop51
+        }
+
+        Dell.Metrics.sc.country = 'us';
+        Dell.Metrics.sc.language = 'en';
+        Dell.Metrics.sc.segment = 'bsd';
+        Dell.Metrics.sc.customerset = '04';
+        Dell.Metrics.sc.region = 'us';
+        Dell.Metrics.sc.cms = "Fuel";
+        Dell.Metrics.sc.pagename = "us|en|04|bsd|kbdoc|print";
+        Dell.Metrics.sc.supportvisit = "true";
+        Dell.Metrics.sc.supportappindex = "111.700.100.000";
+
+        applyStylesPrintLayout();
+
+        if ('True' === "True") {
+            $('#tabcontent table:not(#ArticleContent)').attr('border', '1');
+        }
+    });
+</script>
+
+</div>
+    
+    
+    <script data-src="https://www.dellcdn.com/support/staticcdn/external/js/adobe/1.8/visitorapicoveoml.min.js" type="application/x-suppress" data-nonce="NjM4MzMzMDY3MDYxOTEyODI00"></script>
+    <script async type="application/x-suppress" data-src="//nexus.dell.com/dell/eSupport/Bootstrap.js" data-nonce="NjM4MzMzMDY3MDYxOTEyODI00" defer></script>
+    <script type="text/javascript" nonce="NjM4MzMzMDY3MDYxOTEyODI00">
+        Dell.Loader=Dell.Loader||{},Dell.Loader.scripts={},function(t,e){(function(){"use strict";var r=0,n=e.createElement("script"),a=n.async,i=[],l=[],s={},u={},c=e.getElementsByTagName("head")[0],o=!1,d=0,f=0,p=!1,g=Dell.perfmetrics,b=e.createDocumentFragment(),A=0,m=(e.querySelector(".razor"),function(t){var e=!1,r=0;for(r=0;t>=r;r++)e=s[r];if(e)for(r=t+1;A>r;r++){var n=i[r].getAttribute?i[r].getAttribute("defer"):null,a=i[r].getAttribute?i[r].getAttribute("data-src"):null,l=i[r].getAttribute?i[r].getAttribute("data-nonce"):null;if(i[r].getAttribute("data-src")&&!s[r])break;null!=a||u[r]||null!=n&&!p||C(i[r],r,l)}}),h=function(t,e){var r=t.getAttribute("data-seq");t.getAttribute("defer"),void 0===s[r]&&(s[r]=!0,d++,m(parseInt(r))),g&&Dell.perfmetrics.end("script.load-"+D(e)),y()},y=function(){"undefined"!=typeof jQuery&&(!o&&A>d+f?($.holdReady(!0),o=!0):o&&d+f>=A&&($.holdReady(!1),jQuery.ready(),o=!1))},v=function(){for(var t;l[0]&&"loaded"==l[0].readyState;)(t=l.shift()).onreadystatechange=null,g&&Dell.perfmetrics.start("script.load-"+D(t.getAttribute("src"))),c.appendChild(t),h(t,t.getAttribute("src"))},D=function(t){var e=t.split("/").pop();return null!=t?e.split("?")[0]:t},x=function(t,r,i,s){var u=t.toLowerCase();(n=e.createElement("script")).setAttribute("data-seq",i),null!=r.crossOrigin&&null!=r.crossOrigin&&"anonymous"===r.crossOrigin&&n.setAttribute("crossorigin","anonymous"),-1===u.indexOf("nexus")&&-1!=u.indexOf("dell.com")||-1==u.indexOf("://")&&u.indexOf("//"),a?n.async=!1:r.readyState?(l.push(n),n.onreadystatechange=v):n.setAttribute("defer","true"),null!=s&&n.setAttribute("nonce",s),n.src=t,n.onreadystatechange||(n.onload=function(){h(this,t)},b.appendChild(n),g&&Dell.perfmetrics.start("script.load-"+D(t)))},C=function(t,r,i){g&&Dell.perfmetrics.start("script.inline-"+r),n=e.createElement("script"),a&&(n.async=!1),u[r]=!0,n.textContent?n.textContent=t.text:n.text=t.text,n.setAttribute("data-seq",r),null!=i&&n.setAttribute("nonce",i),c.appendChild(n),t.parentNode.removeChild(t),d++,g&&Dell.perfmetrics.end("script.inline-"+r)};t.addEventListener("load",function(){var t=!1;for(p=!0,b=e.createDocumentFragment(),r=0;A>r;r++)if(i[r].getAttribute&&null!=i[r].getAttribute("defer")){var n=i[r].getAttribute("data-src"),a=i[r].getAttribute?i[r].getAttribute("data-nonce"):null;n?(x(n,i[r],r,a),t=!0):t||C(i[r],r,a)}b.childNodes.length>0&&c.appendChild(b)},!1),function(){var t=!1;for(i=function(){var t=e.getElementsByTagName("script"),n=[],a=[];for(A=t.length,r=A-1;r>=0;r--)t[r].getAttribute&&"application/x-suppress"==t[r].getAttribute("type")&&(null!=t[r].getAttribute("defer")?(a.unshift(t[r]),f++):n.unshift(t[r]));return n.concat(a)}(),A=i.length,r=0;A>r;r++){var n=i[r].getAttribute("data-src"),a=i[r].getAttribute?i[r].getAttribute("data-nonce"):null;null==i[r].getAttribute("defer")&&(n?(x(n,i[r],r,a),t=!0):t||C(i[r],r,a))}c.appendChild(b);var l=e.documentElement;l.className=l.className.replace(/\bno-js\b/,"js")}()}).call(Dell.Loader.scripts)}(window,document);
+    </script>
+<script type="text/javascript" nonce="06227bbbc51a48e824acc38f8972f878" src="/iUXVjXm42/y6ATRsP/sQ/tY3QhG7bEuOa/PRc4N0sKYQk/HDw5Vl4-/ECAB"></script><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"
+                                                             type="text/css" nonce="06227bbbc51a48e824acc38f8972f878" href="/_sec/cp_challenge/sec-4-0.css">
+                                        <script nonce="06227bbbc51a48e824acc38f8972f878" src="/_sec/cp_challenge/sec-cpt-4-0.js" async defer></script>
+                                        <div id="sec-overlay" style="display:none;">
+                                        <div id="sec-container">
+                                        </div>
+                                      </div></body>
+</html>

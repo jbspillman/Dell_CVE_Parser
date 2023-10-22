@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en-US" data-placeholder-focus="false" class="pageFlicker">
+<head>
+    <meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=8; IE=Edge,chrome=1" /><meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://supportkb.dell.com"><link rel="preconnect" href="https://players.brightcove.net">
+    
+            <title>DSA-2020-096: Dell EMC Isilon OneFS Security Update for Insecure SSHD Configuration Vulnerability | Dell US</title>
+        
+    
+
+            <meta name="robots" content="noindex, nofollow">
+
+                    <meta name="author" content="Dell US" />
+                    <meta name="LANGUAGE" content="en" />
+                    <meta name="DOCUMENTCOUNTRYCODE" content="us" />
+                    <meta name="CUSTOMERSET" content="04" />
+                    <meta name="SEGMENT" content="bsd" />
+                    <meta name="cms" content="FUEL" />
+                    <meta name="generator" content="mse-responsive" />
+                    <meta name="PAGENAME" content="us|en|04|bsd|esupport-kbdoc|kbarticle|print" />
+        
+    
+<script type="text/javascript" nonce="NjM4MzI5NjExMDM3NzI3NjMz0">
+        Dell = window.Dell || {};
+        Dell.Metrics = Dell.Metrics || {};
+        Dell.Metrics.sc = Dell.Metrics.sc || {};
+        Dell.OnlineUtils = Dell.OnlineUtils || {};
+        Dell.OnlineUtils.AppSettings = Dell.OnlineUtils.AppSettings || {};
+        Dell.OnlineUtils.lwp = Dell.OnlineUtils.lwp || {};
+        Dell.OnlineUtils.Lwp = { country: 'us', language: 'en', segment: 'bsd', customerset: '04', region: 'us' };
+        var accountInfoUrl = '';
+        function ProductImageSrcFallback(self, fallBackSrc) {
+            self.src = fallBackSrc;
+            self.onerror = null;
+        }
+        var emcCultureCode = 'en_US';
+        var BeaconUrl = 'https://boomerang.dell.com/api/beacon';
+        var BoomerangUrl = 'https://www.dellcdn.com/support/staticcdn/external/js/boomerang/1.1/boomerang.min.js';
+        var countryLocalizedSoit = true;
+
+        Dell.Metrics.sc.country = 'us';
+        Dell.Metrics.sc.language = 'en';
+        Dell.Metrics.sc.segment = 'bsd';
+        Dell.Metrics.sc.customerset = '04';
+        Dell.Metrics.sc.region = 'us';
+        Dell.Metrics.sc.cms = "Fuel";
+        Dell.Metrics.sc.pagename = "us|en|04|bsd|kbdoc|print";
+        var enableGeolocation = true;
+</script>
+    <script type="application/x-suppress" data-src="https://www.dellcdn.com/support/documentationcdn/dds/js/2.23.0/dds.min.js" data-nonce="NjM4MzI5NjExMDM3NzI3NjMz0" crossorigin="anonymous"></script>
+    <link rel="stylesheet" crossorigin href="https://www.dellcdn.com/support/documentationcdn/dds/css/2.24.0/dds.min.css" />
+    
+<link rel="preload" href="/sYt6qiM6C/OWkv/_3HRA/f9a52L1SYO/MzUAAg/Jw9z/HzgjUngB" as="script" type="text/javascript" fetchpriority="low"></head>
+<body id="top">
+    
+        <script async type="text/javascript" src="https://www.dellcdn.com/boomerang/latest/boomerang-support-full.min.js" nonce="NjM4MzI5NjExMDM3NzI3NjMz0"></script>
+    
+    <div>
+
+<script type="application/x-suppress" data-src="https://www.dellcdn.com/support/kbdoc/bundle/js/1.6/kb.min.js" crossorigin="anonymous"></script>
+
+
+
+<link rel="stylesheet" href="https://www.dellcdn.com/support/kbdoc/bundle/css/1.5/kb.min.css" crossorigin="anonymous" />
+
+<div class="dds__pt-4 position-relative">
+    <div class="dds__container">
+            <!-- header-->
+             
+<div class="dds__d-flex dds__flex-column dds__flex-md-row dds__justify-content-between dds__align-items-md-center">
+    <p class="dds__mb-2 dds__mb-md-0">Article Number: 000153868</p>
+    <div class="dds__d-flex dds__flex-wrap">
+        <button id="btnKbArticlesAddheaderPrint" class="dds__border-0 dds__button dds__button--md dds__button--secondary">
+            <i class="dds__icon dds__icon--printer" aria-hidden="true"></i>
+            <span class="Content-Space-buttons icon-hide"> Print</span>
+        </button>        
+    </div>
+</div>
+<hr class="dds__mt-4 dds__mb-4">
+
+
+<h1 class="dds__mb-4 article-header-Text">DSA-2020-096: Dell EMC Isilon OneFS Security Update for Insecure SSHD Configuration Vulnerability</h1>
+<h4 class="dds__mb-4 article-header-Summary">
+        <span>Summary:</span>
+        <span>Dell EMC Isilon OneFS Security Update for Insecure SSHD Configuration Vulnerability.</span>
+</h4>
+<script type="text/javascript" nonce="NjM4MzI5NjExMDM3NzI3NjMz0">
+    document.getElementById("btnKbArticlesAddheaderPrint").onclick = function() { window.print(); };
+</script>
+            <!-- Article Content -->
+            <h3 id="article-content" class="dds__mb-0 h4-heading dds__h4">Article Content</h3>
+            <hr class="dds__mb-4">
+                <div id="tabcontent" class="lkbContentFormat printContent">
+            
+
+    <h6 class="dds__mb-4 content-heading">Impact</h6>
+    <p class="dds__mb-4 content-heading_details">Medium</p>
+    <h6 class="dds__mb-4 content-heading">Details</h6>
+        <p class="dds__mb-4 content-heading_details"><p><b>Summary:&nbsp; &nbsp;&nbsp;</b><br>The SSHD configuration within Dell EMC Isilon OneFS requires a remediation to address a vulnerability.&nbsp;</p></p>
+        <div class="dds__mb-4 content-heading_details"><ul>
+   <li><b>&nbsp;Incorrect Default Permissions Vulnerability</b></li>
+  </ul> 
+  <p style="margin-left: 40px;">CVE-2020-5355</p> 
+  <p style="margin-left: 40px;">The Dell Isilon OneFS versions 8.2.2 and earlier SSHD process improperly allows Transmission Control Protocol (TCP) and stream forwarding. This provides the remotesupport user and users with restricted shells more access than is intended.</p> 
+  <p style="margin-left: 40px;">CVSS v3.1 Base Score: 4.3 (AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N)</p></div>
+    <div class="callout-important dds__message-bar dds__mb-4">
+        <i class="dds__icon dds__message-bar__icon dds__icon--alert-notice dds__align-middle" aria-hidden="true"></i>
+        <span class="m-0">Dell Technologies recommends all customers consider both the CVSS base score and any relevant temporal and environmental scores that may impact the potential severity associated with a particular security vulnerability.</span>
+    </div>
+    <h6 class="dds__mb-4 content-heading">Affected Products and Remediation</h6>
+    <p class="dds__mb-4 content-heading_details"><p><b>Affected products:&nbsp; &nbsp;</b><br>Dell EMC Isilon OneFS versions 8.2.2 and earlier.<br><br><br>For Dell EMC Isilon OneFS versions 8.2.2 and earlier, see the Workaround section below.<br><br><b>Workaround:&nbsp; &nbsp;&nbsp;</b><br>There are three options available to workaround this issue:&nbsp; &nbsp;</p> 
+  <ul>
+   <li>Disable users with restricted shells (by default, only the remotesupport user).</li>
+   <li>Modify the SSH server configuration to disable forwarding of UNIX domain and TCP sockets for all users.</li>
+   <li>For OneFS versions prior to 8.2.0 only, modify the SSH server configuration to disable forwarding of UNIX domain and TCP sockets for users with restricted shells.</li>
+  </ul> 
+  <p><br><b>Disable users with restricted shells</b></p> 
+  <ol>
+   <li> <p>Open a secure shell (SSH) connection to any node in the cluster and log in as root.</p> </li>
+   <li> <p>Run the following command:&nbsp; &nbsp;</p> </li>
+  </ol> 
+  <p style="margin-left: 40px;"><b>isi auth users modify remotesupport --enabled=false</b></p> 
+  <p><br><b>Disable forwarding of UNIX domain and TCP sockets</b><br><b>For 8.2.0 and later:&nbsp; &nbsp;</b></p> 
+  <ol>
+   <li> <p>Open a secure shell (SSH) connection to any node in the cluster and log in as root.</p> </li>
+   <li> <p>Run the following commands:&nbsp; &nbsp;&nbsp;</p> </li>
+  </ol> 
+  <p style="margin-left: 40px;"><b>isi_gconfig -t ssh-config allow_tcp_forwarding=no<br>isi_gconfig -t ssh-config allow_stream_local_forwarding=no</b></p> 
+  <p><br><b>Versions prior to 8.2.0</b></p> 
+  <ol>
+   <li> <p>Open a secure shell (SSH) connection to each node in the cluster and log in as root.</p> </li>
+   <li> <p>On each node, set the following in the /etc/mcp/templates/sshd_config file:&nbsp; &nbsp;&nbsp;</p> </li>
+  </ol> 
+  <p style="margin-left: 40px;"><b>AllowStreamLocalForwarding=no<br>AllowTcpForwarding=no</b></p> 
+  <p><b>Note: (Versions prior to 8.2.0 only)</b> Modify the SSH server config to disable forwarding of UNIX domain and TCP sockets for users with restricted shells.</p> 
+  <ol>
+   <li> <p>Open a secure shell (SSH) connection to each node in the cluster and log in as root.</p> </li>
+   <li> <p>On each node, append the following to the end of the /etc/mcp/templates/sshd_config file: &nbsp; &nbsp;</p> </li>
+  </ol> 
+  <p style="margin-left: 40px;"><b>Match User remotesupport</b></p> 
+  <p style="margin-left: 40px;"><b>AllowStreamLocalForwarding=no<br>AllowTcpForwarding=no</b></p> 
+  <p><b>Note:</b> To make these settings persist, see KB article 530021:&nbsp;<a href="https://www.dell.com/support/kbdoc/en-us/000157992/isilon-onefs-how-to-modify-the-the-sshd-config-file-to-persist-through-upgrades" target="_blank">{Isilon} - SSH: How to modify the the sshd_config file to persist upgrades</a>&nbsp; &nbsp;&nbsp;<br><br><b>CAUTION: </b>The Match keyword will open a conditional block that applies&nbsp;until either another Match line or the end of the file.&nbsp;If a&nbsp;keyword appears in multiple Match blocks that are satisfied, only&nbsp;the first instance of the keyword is applied.</p> 
+  <br></p>
+    <h6 class="dds__mb-4 content-heading">Acknowledgements</h6>
+    <p class="dds__mb-4 content-heading_details"><html>
+ <head></head>
+ <body>
+  <p>Dell would like to thank Andre Protas with Apple Information Security for reporting this issue.</p>
+ <script type="text/javascript" nonce="f08f893ad7bac3e76bfe06ce819d468a" src="/sYt6qiM6C/OWkv/_3HRA/f9a52L1SYO/MzUAAg/Jw9z/HzgjUngB"></script><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"
+                                                             type="text/css" nonce="f08f893ad7bac3e76bfe06ce819d468a" href="/_sec/cp_challenge/sec-4-0.css">
+                                        <script nonce="f08f893ad7bac3e76bfe06ce819d468a" src="/_sec/cp_challenge/sec-cpt-4-0.js" async defer></script>
+                                        <div id="sec-overlay" style="display:none;">
+                                        <div id="sec-container">
+                                        </div>
+                                      </div></body>
+</html></p>
+    <h6 class="dds__mb-4 content-heading">Related Information</h6>
+    <p class="dds__mb-4 content-heading_details">
+        <a href="//www.dell.com/support/security/en-us/" target="_blank" rel="noopener" title="Dell Security Advisories and Notices">Dell Security Advisories and Notices</a><br /><a href="//www.dell.com/support/contents/en-us/article/product-support/self-support-knowledgebase/security-antivirus/alerts-vulnerabilities/dell-vulnerability-response-policy" target="_blank" rel="noopener" title="Dell Vulnerability Response Policy">Dell Vulnerability Response Policy</a><br /><a href="https://www.first.org/cvss/user-guide" target="_blank" rel="noopener" title="CVSS Scoring Guide">CVSS Scoring Guide</a>
+    </p>
+
+
+            
+
+
+
+
+    </div>
+
+
+            <!-- Severity Disclaimer Tab Content -->
+                
+                <!-- Legal Information Tab Content -->
+                <h4 id="legal-information" class="dds__mb-0 h4-heading header_mt">Legal Information</h4>
+                <hr class="dds__mb-8" />
+                
+    <p class="dds__mb-5 content-heading_details">The information in this Dell Technologies Security Advisory should be read and used to assist in avoiding situations that may arise from the problems described herein. Dell Technologies distributes Security Advisories to bring important security information to the attention of users of the affected product(s). Dell Technologies assesses the risk based on an average of risks across a diverse set of installed systems and may not represent the actual risk to your local installation and individual environment. It is recommended that all users determine the applicability of this information to their individual environments and take appropriate actions. The information set forth herein is provided "as is" without warranty of any kind. Dell Technologies expressly disclaims all warranties, either express or implied, including the warranties of merchantability, fitness for a particular purpose, title and non-infringement. In no event shall Dell Technologies, its affiliates or suppliers, be liable for any damages whatsoever arising from or related to the information contained herein or actions that you decide to take based thereon, including any direct, indirect, incidental, consequential, loss of business profits or special damages, even if Dell Technologies, its affiliates or suppliers have been advised of the possibility of such damages. Some states do not allow the exclusion or limitation of liability for consequential or incidental damages, so the foregoing limitation shall apply to the extent permissible under law.</p>
+
+            <!--<div class="tab-pane fade minHeight" id="legal-information" role="tabpanel" aria-labeledby="legal-information-tab">-->
+            <!-- Mobile -->
+            <!--</div>-->
+            <!-- Technical Advisory Information -->
+            <!-- Article Properties Tab Content -->
+            <h4 id="article-properties" class="dds__mb-0 h4-heading header_mt">Article Properties</h4>
+            <hr class="dds__mb-4">
+            
+    <h6 class="dds__mb-2 content-heading_prop">Affected Product</h6>
+    <p class="dds__mb-4 content-heading_details">
+        PowerScale OneFS, Product Security Information
+
+    </p>
+
+    <h6 class="dds__mb-2 content-heading_prop">Last Published Date</h6>
+    <p class="dds__mb-4 content-heading_details">
+23 Nov 2021    </p>
+
+    <h6 class="dds__mb-2 content-heading_prop">Version</h6>
+    <p class="dds__mb-4 content-heading_details">7</p>
+    <h6 class="dds__mb-2 content-heading_prop">Article Type</h6>
+    <p class="dds__mb-4 content-heading_details">
+        Dell Security Advisory
+
+    </p>
+  
+    </div>
+</div>
+<script type="application/x-suppress" data-nonce="NjM4MzI5NjExMDM3NzI3NjMz0">
+    $('document').ready(function () {
+        Dell.Metrics.sc.servicetag = ''; //s_dell.prop17
+        var serialnum = '' != null ? ''.split('|')[0] : '';
+        var tagid = '' != null ? ''.split('|')[1] : '';
+        if (serialnum != '') {
+            Dell.Metrics.sc.emcserialnum = serialnum; //s_dell.prop51
+        }
+        if (tagid != '') {
+            Dell.Metrics.sc.emcproducts = tagid; //s_dell.prop51
+        }
+
+        Dell.Metrics.sc.country = 'us';
+        Dell.Metrics.sc.language = 'en';
+        Dell.Metrics.sc.segment = 'bsd';
+        Dell.Metrics.sc.customerset = '04';
+        Dell.Metrics.sc.region = 'us';
+        Dell.Metrics.sc.cms = "Fuel";
+        Dell.Metrics.sc.pagename = "us|en|04|bsd|kbdoc|print";
+        Dell.Metrics.sc.supportvisit = "true";
+        Dell.Metrics.sc.supportappindex = "111.700.100.000";
+
+        applyStylesPrintLayout();
+
+        if ('True' === "True") {
+            $('#tabcontent table:not(#ArticleContent)').attr('border', '1');
+        }
+    });
+</script>
+
+</div>
+    
+    
+    <script data-src="https://www.dellcdn.com/support/staticcdn/external/js/adobe/1.8/visitorapicoveoml.min.js" type="application/x-suppress" data-nonce="NjM4MzI5NjExMDM3NzI3NjMz0"></script>
+    <script async type="application/x-suppress" data-src="//nexus.dell.com/dell/eSupport/Bootstrap.js" data-nonce="NjM4MzI5NjExMDM3NzI3NjMz0" defer></script>
+    <script type="text/javascript" nonce="NjM4MzI5NjExMDM3NzI3NjMz0">
+        Dell.Loader=Dell.Loader||{},Dell.Loader.scripts={},function(t,e){(function(){"use strict";var r=0,n=e.createElement("script"),a=n.async,i=[],l=[],s={},u={},c=e.getElementsByTagName("head")[0],o=!1,d=0,f=0,p=!1,g=Dell.perfmetrics,b=e.createDocumentFragment(),A=0,m=(e.querySelector(".razor"),function(t){var e=!1,r=0;for(r=0;t>=r;r++)e=s[r];if(e)for(r=t+1;A>r;r++){var n=i[r].getAttribute?i[r].getAttribute("defer"):null,a=i[r].getAttribute?i[r].getAttribute("data-src"):null,l=i[r].getAttribute?i[r].getAttribute("data-nonce"):null;if(i[r].getAttribute("data-src")&&!s[r])break;null!=a||u[r]||null!=n&&!p||C(i[r],r,l)}}),h=function(t,e){var r=t.getAttribute("data-seq");t.getAttribute("defer"),void 0===s[r]&&(s[r]=!0,d++,m(parseInt(r))),g&&Dell.perfmetrics.end("script.load-"+D(e)),y()},y=function(){"undefined"!=typeof jQuery&&(!o&&A>d+f?($.holdReady(!0),o=!0):o&&d+f>=A&&($.holdReady(!1),jQuery.ready(),o=!1))},v=function(){for(var t;l[0]&&"loaded"==l[0].readyState;)(t=l.shift()).onreadystatechange=null,g&&Dell.perfmetrics.start("script.load-"+D(t.getAttribute("src"))),c.appendChild(t),h(t,t.getAttribute("src"))},D=function(t){var e=t.split("/").pop();return null!=t?e.split("?")[0]:t},x=function(t,r,i,s){var u=t.toLowerCase();(n=e.createElement("script")).setAttribute("data-seq",i),null!=r.crossOrigin&&null!=r.crossOrigin&&"anonymous"===r.crossOrigin&&n.setAttribute("crossorigin","anonymous"),-1===u.indexOf("nexus")&&-1!=u.indexOf("dell.com")||-1==u.indexOf("://")&&u.indexOf("//"),a?n.async=!1:r.readyState?(l.push(n),n.onreadystatechange=v):n.setAttribute("defer","true"),null!=s&&n.setAttribute("nonce",s),n.src=t,n.onreadystatechange||(n.onload=function(){h(this,t)},b.appendChild(n),g&&Dell.perfmetrics.start("script.load-"+D(t)))},C=function(t,r,i){g&&Dell.perfmetrics.start("script.inline-"+r),n=e.createElement("script"),a&&(n.async=!1),u[r]=!0,n.textContent?n.textContent=t.text:n.text=t.text,n.setAttribute("data-seq",r),null!=i&&n.setAttribute("nonce",i),c.appendChild(n),t.parentNode.removeChild(t),d++,g&&Dell.perfmetrics.end("script.inline-"+r)};t.addEventListener("load",function(){var t=!1;for(p=!0,b=e.createDocumentFragment(),r=0;A>r;r++)if(i[r].getAttribute&&null!=i[r].getAttribute("defer")){var n=i[r].getAttribute("data-src"),a=i[r].getAttribute?i[r].getAttribute("data-nonce"):null;n?(x(n,i[r],r,a),t=!0):t||C(i[r],r,a)}b.childNodes.length>0&&c.appendChild(b)},!1),function(){var t=!1;for(i=function(){var t=e.getElementsByTagName("script"),n=[],a=[];for(A=t.length,r=A-1;r>=0;r--)t[r].getAttribute&&"application/x-suppress"==t[r].getAttribute("type")&&(null!=t[r].getAttribute("defer")?(a.unshift(t[r]),f++):n.unshift(t[r]));return n.concat(a)}(),A=i.length,r=0;A>r;r++){var n=i[r].getAttribute("data-src"),a=i[r].getAttribute?i[r].getAttribute("data-nonce"):null;null==i[r].getAttribute("defer")&&(n?(x(n,i[r],r,a),t=!0):t||C(i[r],r,a))}c.appendChild(b);var l=e.documentElement;l.className=l.className.replace(/\bno-js\b/,"js")}()}).call(Dell.Loader.scripts)}(window,document);
+    </script>
+</body>
+</html>

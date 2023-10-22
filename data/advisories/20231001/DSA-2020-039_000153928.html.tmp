@@ -1,0 +1,114 @@
+<!-- Article Content -->
+<h3 id="article-content" class="dds__mb-0 h4-heading dds__h4">Article Content</h3>
+<hr class="dds__mb-4">
+<div id="tabcontent" class="lkbContentFormat printContent">
+<h6 class="dds__mb-4 content-heading">Impact</h6>
+<p class="dds__mb-4 content-heading_details">Critical</p>
+<h6 class="dds__mb-4 content-heading">Details</h6>
+<p class="dds__mb-4 content-heading_details"><p>
+Summary:
+
+<br>Dell EMC Isilon OneFS 8.2.0 and later contains a workaround for a SyncIQ a vulnerability that affects all current versions of OneFS through OneFS 8.2.2. This vulnerability may potentially be exploited by malicious users to compromise the affected system.</p></p>
+<div class="dds__mb-4 content-heading_details"><ul>
+<li>
+Unauthorized Access vulnerability
+</li>
+</ul>
+<p style="margin-left: 40px;">CVE-2020-5328</p>
+<p style="margin-left: 40px;">Dell EMC Isilon OneFS (all current versions) contain an unauthorized access vulnerability due to a lack of thorough authorization checks in SyncIQ. This is only impactful if the SyncIQ feature is licensed, and the encrypted syncs option is not marked as required. When this happens, loss of control of the cluster may occur.</p>
+<p style="margin-left: 40px;">CVSS v3.1 Base Score: 9.8 (AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H)</p></div>
+<div class="callout-important dds__message-bar dds__mb-4">
+<i class="dds__icon dds__message-bar__icon dds__icon--alert-notice dds__align-middle" aria-hidden="true"></i>
+<span class="m-0">Dell Technologies recommends all customers consider both the CVSS base score and any relevant temporal and environmental scores that may impact the potential severity associated with a particular security vulnerability.</span>
+</div>
+<h6 class="dds__mb-4 content-heading">Affected Products and Remediation</h6>
+<p class="dds__mb-4 content-heading_details"><p>
+Affected products:
+
+
+
+<br>Dell EMC Isilon OneFS versions through OneFS 8.2.2<br><br>
+Workaround:
+
+
+</p>
+<table border="1" height="762" width="513">
+<tbody>
+<tr>
+<td colspan="1" rowspan="1"> <p>
+Scenario
+</p> </td>
+<td colspan="1" rowspan="1"> <p>
+OneFS versions prior to 8.2.0
+</p> </td>
+<td colspan="1" rowspan="1"> <p>
+OneFS 8.2.0 and later
+</p> </td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1"> <p>
+SyncIQ is not licensed
+</p> </td>
+<td colspan="1" rowspan="1"> <p>No change needed</p> </td>
+<td colspan="1" rowspan="1"> <p>No change needed</p> </td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1"> <p>
+SyncIQ is licensed but not used
+</p> </td>
+<td colspan="1" rowspan="1"> <p>Disable SyncIQ:
+</p>
+<ol>
+<li> <p>On the cluster, log in as SSH.</p> </li>
+<li> <p>Run the following command to disable SyncIQ:
+</p> </li>
+</ol> <p style="margin-left: 40px;"><span style="font-family: Courier New,Courier,monospace;">isi sync settings modify-service=Off</span></p> </td>
+<td colspan="1" rowspan="1"> <p>Disable SyncIQ:
+
+
+</p>
+<ol>
+<li> <p>On the cluster, log in as SSH.
+
+
+
+
+</p> </li>
+<li> <p>Run the following command to disable SyncIQ:</p> </li>
+</ol> <p style="margin-left: 40px;"><span style="font-family: Courier New,Courier,monospace;">isi sync settings modify-service=Off</span><br> <br></p> </td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1"> <p>
+SyncIQ is licensed and used
+</p> </td>
+<td colspan="1" rowspan="1">
+<ol>
+<li> <p>Upgrade to OneFS 8.2.0 on all clusters that are using SyncIQ.</p> </li>
+<li> <p>Follow the workaround instructions in For OneFS versions 8.2.0 and later in the next cell.</p> </li>
+</ol> <p><br> <br> <br> <br> <br> <br></p> </td>
+<td colspan="1" rowspan="1">
+<ol>
+<li> <p>Enable SyncIQ encryption for each impacted cluster. For more details, see the Configure certificates procedure described in the Data Encryption with SyncIQ chapter of the <a href="https://support.emc.com/docu93697_OneFS-8.2.0-CLI-Administration-Guide.pdf" target="_blank">OneFS 8.2.0 CLI Administration Guide</a>, and the steps that need to be run on each policy to enable encryption.</p> </li>
+<li> <p>Create a SyncIQ policy to enable encryption, as described in the Create encrypted SyncIQ policies procedure of the guide.</p> </li>
+<li> <p>Force SyncIQ encryption, as described in the same procedure.</p> </li>
+</ol> <p style="margin-left: 40px;"><span style="font-family: Courier New,Courier,monospace;">isi sync setting mod --encryption-required=True</span></p> </td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">
+Adjustment to lessen the vulnerability impact</td>
+<td colspan="2" rowspan="1">The cluster can be left in a less vulnerable state by enabling a SyncIQ password. For more information see KB article
+542907:
+<a href="" target="_blank"> Link Error Dell EMC Isilon OneFS: How to use a PSK when using SyncIQ since 7.0.0</a> on the Customer support site.
+<br></td>
+</tr>
+</tbody>
+</table>
+<p><br>
+Note:Because SyncIQ encryption requires mutual authentication SSL handshakes, each cluster must specify its own identity certificate and the CA certificate of the peer. For more information, see the SyncIQ traffic encryption section of the <a href="https://support.emc.com/docu95373_OneFS__8.2.1_Web_Administration_Guide.pdf" target="_blank">OneFS 8.2.1 Web Admin Guide</a>.</p>
+<br>
+<br></p>
+<h6 class="dds__mb-4 content-heading">Related Information</h6>
+<p class="dds__mb-4 content-heading_details">
+<a href="//www.dell.com/support/security/en-us/" target="_blank" rel="noopener" title="Dell Security Advisories and Notices">Dell Security Advisories and Notices</a><br /><a href="//www.dell.com/support/contents/en-us/article/product-support/self-support-knowledgebase/security-antivirus/alerts-vulnerabilities/dell-vulnerability-response-policy" target="_blank" rel="noopener" title="Dell Vulnerability Response Policy">Dell Vulnerability Response Policy</a><br /><a href="https://www.first.org/cvss/user-guide" target="_blank" rel="noopener" title="CVSS Scoring Guide">CVSS Scoring Guide</a>
+</p>
+</div>

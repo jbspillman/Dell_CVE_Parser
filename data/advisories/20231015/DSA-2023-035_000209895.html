@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en-US" data-placeholder-focus="false" class="pageFlicker">
+<head>
+    <meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=8; IE=Edge,chrome=1" /><meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://supportkb.dell.com"><link rel="preconnect" href="https://players.brightcove.net">
+    
+            <title>DSA-2023-035: Dell PowerScale OneFS Security Updates for Multiple Security Vulnerabilities | Dell US</title>
+        
+    
+
+            <meta name="robots" content="noindex, nofollow">
+
+                    <meta name="author" content="Dell US" />
+                    <meta name="LANGUAGE" content="en" />
+                    <meta name="DOCUMENTCOUNTRYCODE" content="us" />
+                    <meta name="CUSTOMERSET" content="04" />
+                    <meta name="SEGMENT" content="bsd" />
+                    <meta name="cms" content="FUEL" />
+                    <meta name="generator" content="mse-responsive" />
+                    <meta name="PAGENAME" content="us|en|04|bsd|esupport-kbdoc|kbarticle|print" />
+        
+    
+<script type="text/javascript" nonce="NjM4MzI5NjExMDY3NzUyMjMy0">
+        Dell = window.Dell || {};
+        Dell.Metrics = Dell.Metrics || {};
+        Dell.Metrics.sc = Dell.Metrics.sc || {};
+        Dell.OnlineUtils = Dell.OnlineUtils || {};
+        Dell.OnlineUtils.AppSettings = Dell.OnlineUtils.AppSettings || {};
+        Dell.OnlineUtils.lwp = Dell.OnlineUtils.lwp || {};
+        Dell.OnlineUtils.Lwp = { country: 'us', language: 'en', segment: 'bsd', customerset: '04', region: 'us' };
+        var accountInfoUrl = '';
+        function ProductImageSrcFallback(self, fallBackSrc) {
+            self.src = fallBackSrc;
+            self.onerror = null;
+        }
+        var emcCultureCode = 'en_US';
+        var BeaconUrl = 'https://boomerang.dell.com/api/beacon';
+        var BoomerangUrl = 'https://www.dellcdn.com/support/staticcdn/external/js/boomerang/1.1/boomerang.min.js';
+        var countryLocalizedSoit = true;
+
+        Dell.Metrics.sc.country = 'us';
+        Dell.Metrics.sc.language = 'en';
+        Dell.Metrics.sc.segment = 'bsd';
+        Dell.Metrics.sc.customerset = '04';
+        Dell.Metrics.sc.region = 'us';
+        Dell.Metrics.sc.cms = "Fuel";
+        Dell.Metrics.sc.pagename = "us|en|04|bsd|kbdoc|print";
+        var enableGeolocation = true;
+</script>
+    <script type="application/x-suppress" data-src="https://www.dellcdn.com/support/documentationcdn/dds/js/2.23.0/dds.min.js" data-nonce="NjM4MzI5NjExMDY3NzUyMjMy0" crossorigin="anonymous"></script>
+    <link rel="stylesheet" crossorigin href="https://www.dellcdn.com/support/documentationcdn/dds/css/2.24.0/dds.min.css" />
+    
+<link rel="preload" href="/sYt6qiM6C/OWkv/_3HRA/f9a52L1SYO/MzUAAg/Jw9z/HzgjUngB" as="script" type="text/javascript" fetchpriority="low"></head>
+<body id="top">
+    
+        <script async type="text/javascript" src="https://www.dellcdn.com/boomerang/latest/boomerang-support-full.min.js" nonce="NjM4MzI5NjExMDY3NzUyMjMy0"></script>
+    
+    <div>
+
+<script type="application/x-suppress" data-src="https://www.dellcdn.com/support/kbdoc/bundle/js/1.6/kb.min.js" crossorigin="anonymous"></script>
+
+
+
+<link rel="stylesheet" href="https://www.dellcdn.com/support/kbdoc/bundle/css/1.5/kb.min.css" crossorigin="anonymous" />
+
+<div class="dds__pt-4 position-relative">
+    <div class="dds__container">
+            <!-- header-->
+             
+<div class="dds__d-flex dds__flex-column dds__flex-md-row dds__justify-content-between dds__align-items-md-center">
+    <p class="dds__mb-2 dds__mb-md-0">Article Number: 000209895</p>
+    <div class="dds__d-flex dds__flex-wrap">
+        <button id="btnKbArticlesAddheaderPrint" class="dds__border-0 dds__button dds__button--md dds__button--secondary">
+            <i class="dds__icon dds__icon--printer" aria-hidden="true"></i>
+            <span class="Content-Space-buttons icon-hide"> Print</span>
+        </button>        
+    </div>
+</div>
+<hr class="dds__mt-4 dds__mb-4">
+
+
+<h1 class="dds__mb-4 article-header-Text">DSA-2023-035: Dell PowerScale OneFS Security Updates for Multiple Security Vulnerabilities</h1>
+<h4 class="dds__mb-4 article-header-Summary">
+        <span>Summary:</span>
+        <span>Dell PowerScale OneFS remediation is available for multiple security vulnerabilities that may be exploited by malicious users to compromise the affected system.</span>
+</h4>
+<script type="text/javascript" nonce="NjM4MzI5NjExMDY3NzUyMjMy0">
+    document.getElementById("btnKbArticlesAddheaderPrint").onclick = function() { window.print(); };
+</script>
+            <!-- Article Content -->
+            <h3 id="article-content" class="dds__mb-0 h4-heading dds__h4">Article Content</h3>
+            <hr class="dds__mb-4">
+                <div id="tabcontent" class="lkbContentFormat printContent">
+            
+
+    <h6 class="dds__mb-4 content-heading">Impact</h6>
+    <p class="dds__mb-4 content-heading_details">High</p>
+    <h6 class="dds__mb-4 content-heading">Details</h6>
+        <div class="dds__mb-4 content-heading_details"><table>
+   <thead>
+    <tr>
+     <td colspan="1" rowspan="1"><strong>Proprietary Code CVEs</strong></td>
+     <td colspan="1" rowspan="1"><strong>Description</strong></td>
+     <td colspan="1" rowspan="1"><strong>CVSS Base Score</strong></td>
+     <td colspan="1" rowspan="1"><strong>CVSS Vector String</strong></td>
+    </tr>
+    <tr>
+     <td colspan="1" rowspan="1">CVE-2023-25536</td>
+     <td colspan="1" rowspan="1">Dell PowerScale OneFS 9.4.0.x contains exposure of sensitive information to an unauthorized actor. A malicious authenticated local user could potentially exploit this vulnerability in certificate management, leading to a potential system takeover.</td>
+     <td colspan="1" rowspan="1">6.7</td>
+     <td colspan="1" rowspan="1"><a href="https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H" target="_blank">CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H</a> <img alt="This hyperlink is taking you to a website outside of Dell Technologies." src="https://i.dell.com/is/image/DellContent/pop-up-arrow-corner-carbon-64px-1" title="This hyperlink is taking you to a website outside of Dell Technologies." width="15px"></td>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td colspan="1" rowspan="1">CVE-2023-25540</td>
+     <td colspan="1" rowspan="1">Dell PowerScale OneFS 9.4.0.x contains an incorrect default permissions vulnerability. A local malicious user could potentially exploit this vulnerability to overwrite arbitrary files causing denial of service.</td>
+     <td colspan="1" rowspan="1">6.0</td>
+     <td colspan="1" rowspan="1"><a href="https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:N/I:H/A:H" target="_blank">CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:N/I:H/A:H</a> <img alt="This hyperlink is taking you to a website outside of Dell Technologies." src="https://i.dell.com/is/image/DellContent/pop-up-arrow-corner-carbon-64px-1" title="This hyperlink is taking you to a website outside of Dell Technologies." width="15px"></td>
+    </tr>
+    <tr>
+     <td colspan="1" rowspan="1">CVE-2023-23689</td>
+     <td colspan="1" rowspan="1">Dell PowerScale nodes A200, A2000, H400, H500, H600, H5600, F800, F810 integrated hardware management software contains an uncontrolled resource consumption vulnerability. This may allow an unauthenticated network host to impair integrated hardware management functionality and trigger OneFS data protection mechanism causing a denial of service.</td>
+     <td colspan="1" rowspan="1">5.3</td>
+     <td colspan="1" rowspan="1"><a href="https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L" target="_blank">CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L</a> <img alt="This hyperlink is taking you to a website outside of Dell Technologies." src="https://i.dell.com/is/image/DellContent/pop-up-arrow-corner-carbon-64px-1" title="This hyperlink is taking you to a website outside of Dell Technologies." width="15px"></td>
+    </tr>
+   </tbody>
+  </table> &nbsp; 
+  <table>
+   <thead>
+    <tr>
+     <td colspan="1" rowspan="1"><strong>Third-party Component</strong></td>
+     <td colspan="1" rowspan="1"><strong>CVEs</strong></td>
+     <td colspan="1" rowspan="1"><strong>More Information</strong></td>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td colspan="1" rowspan="1">libxml2</td>
+     <td colspan="1" rowspan="1">CVE-2022-40304</td>
+     <td colspan="1" rowspan="1">See <a href="https://nvd.nist.gov/vuln/detail/CVE-2022-40304" target="_blank">NVD</a> <img alt="This hyperlink is taking you to a website outside of Dell Technologies." src="https://i.dell.com/is/image/DellContent/pop-up-arrow-corner-carbon-64px-1" title="This hyperlink is taking you to a website outside of Dell Technologies." width="15px"> for more details.</td>
+    </tr>
+    <tr>
+     <td colspan="1" rowspan="1">python38</td>
+     <td colspan="1" rowspan="1">CVE-2020-10735</td>
+     <td colspan="1" rowspan="1">See <a href="https://nvd.nist.gov/vuln/detail/CVE-2020-10735" target="_blank">NVD</a> <img alt="This hyperlink is taking you to a website outside of Dell Technologies." src="https://i.dell.com/is/image/DellContent/pop-up-arrow-corner-carbon-64px-1" title="This hyperlink is taking you to a website outside of Dell Technologies." width="15px"> for more details.</td>
+    </tr>
+    <tr>
+     <td colspan="1" rowspan="3">Intel Platform</td>
+     <td colspan="1" rowspan="1">CVE-2021-0153<br> CVE-2021-0154<br> CVE-2021-0155<br> CVE-2021-0159<br> CVE-2021-0188<br> CVE-2021-0189<br> CVE-2021-0190<br> CVE-2021-33060<br> CVE-2021-33103<br> CVE-2021-33122<br> CVE-2021-33123<br> CVE-2021-33124<br> CVE-2022-21123<br> CVE-2022-21125<br> CVE-2022-21127<br> CVE-2022-21166<br> CVE-2022-21180</td>
+     <td colspan="1" rowspan="1"><a href="https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00601.html" target="_blank">INTEL-SA-00601</a> <img alt="This hyperlink is taking you to a website outside of Dell Technologies." src="https://i.dell.com/is/image/DellContent/pop-up-arrow-corner-carbon-64px-1" title="This hyperlink is taking you to a website outside of Dell Technologies." width="15px"><br> <a href="https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00686.html" target="_blank">INTEL-SA-00686</a> <img alt="This hyperlink is taking you to a website outside of Dell Technologies." src="https://i.dell.com/is/image/DellContent/pop-up-arrow-corner-carbon-64px-1" title="This hyperlink is taking you to a website outside of Dell Technologies." width="15px"></td>
+    </tr>
+    <tr>
+     <td colspan="1" rowspan="1">CVE-2022-0004<br> CVE-2021-21131</td>
+     <td colspan="1" rowspan="1"><a href="https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00613.html" target="_blank">INTEL-SA-00613</a> <img alt="This hyperlink is taking you to a website outside of Dell Technologies." src="https://i.dell.com/is/image/DellContent/pop-up-arrow-corner-carbon-64px-1" title="This hyperlink is taking you to a website outside of Dell Technologies." width="15px"><br> See <a href="https://nvd.nist.gov/vuln/detail/CVE-2021-21131" target="_blank">NVD</a> <img alt="This hyperlink is taking you to a website outside of Dell Technologies." src="https://i.dell.com/is/image/DellContent/pop-up-arrow-corner-carbon-64px-1" title="This hyperlink is taking you to a website outside of Dell Technologies." width="15px"> for details.</td>
+    </tr>
+    <tr>
+     <td colspan="1" rowspan="1">CVE-2022-0778</td>
+     <td colspan="1" rowspan="1">See&nbsp;<a href="https://nvd.nist.gov/vuln/detail/CVE-2022-0778" target="_blank">NVD</a> <img alt="This hyperlink is taking you to a website outside of Dell Technologies." src="https://i.dell.com/is/image/DellContent/pop-up-arrow-corner-carbon-64px-1" title="This hyperlink is taking you to a website outside of Dell Technologies." width="15px"> for details.</td>
+    </tr>
+    <tr>
+     <td colspan="1" rowspan="1">Arista EOS</td>
+     <td colspan="1" rowspan="1"> <p>CVE-2021-28500</p> <p>CVE-2021-28501</p> <p>CVE-2021-28503</p> <p>CVE-2021-28506</p> <p>CVE-2021-28507</p> <p>CVE-2021-28496</p> </td>
+     <td colspan="1" rowspan="1"> <p>See&nbsp;<a href="https://nvd.nist.gov/vuln/detail/CVE-2021-28500" target="_blank">NVD&nbsp;</a><img alt="This hyperlink is taking you to a website outside of Dell Technologies." src="https://i.dell.com/is/image/DellContent/pop-up-arrow-corner-carbon-64px-1" title="This hyperlink is taking you to a website outside of Dell Technologies." width="15px"> for details.</p> <p>See&nbsp;<a href="https://nvd.nist.gov/vuln/detail/CVE-2021-28501" target="_blank">NVD&nbsp;</a><img alt="This hyperlink is taking you to a website outside of Dell Technologies." src="https://i.dell.com/is/image/DellContent/pop-up-arrow-corner-carbon-64px-1" title="This hyperlink is taking you to a website outside of Dell Technologies." width="15px">&nbsp;for details.</p> <p>See&nbsp;<a href="https://nvd.nist.gov/vuln/detail/CVE-2021-28503" target="_blank">NVD&nbsp;</a><img alt="This hyperlink is taking you to a website outside of Dell Technologies." src="https://i.dell.com/is/image/DellContent/pop-up-arrow-corner-carbon-64px-1" title="This hyperlink is taking you to a website outside of Dell Technologies." width="15px">&nbsp;for details.</p> <p>See&nbsp;<a href="https://nvd.nist.gov/vuln/detail/CVE-2021-28506" target="_blank">NVD&nbsp;</a><img alt="This hyperlink is taking you to a website outside of Dell Technologies." src="https://i.dell.com/is/image/DellContent/pop-up-arrow-corner-carbon-64px-1" title="This hyperlink is taking you to a website outside of Dell Technologies." width="15px">for details.</p> <p>See&nbsp;<a href="https://nvd.nist.gov/vuln/detail/CVE-2021-28507" target="_blank">NVD&nbsp;</a><img alt="This hyperlink is taking you to a website outside of Dell Technologies." src="https://i.dell.com/is/image/DellContent/pop-up-arrow-corner-carbon-64px-1" title="This hyperlink is taking you to a website outside of Dell Technologies." width="15px">&nbsp;for details.</p> <p>See&nbsp;<a href="https://nvd.nist.gov/vuln/detail/CVE-2021-28496" target="_blank">NVD&nbsp;</a><img alt="This hyperlink is taking you to a website outside of Dell Technologies." src="https://i.dell.com/is/image/DellContent/pop-up-arrow-corner-carbon-64px-1" title="This hyperlink is taking you to a website outside of Dell Technologies." width="15px">&nbsp;for details.</p> </td>
+    </tr>
+   </tbody>
+  </table> &nbsp; 
+  <div class="note">
+   <b>NOTE:</b> All PowerScale related CVEs are addressed in the newly released PowerScale OneFS version 9.5.0.0.
+  </div></div>
+    <div class="callout-important dds__message-bar dds__mb-4">
+        <i class="dds__icon dds__message-bar__icon dds__icon--alert-notice dds__align-middle" aria-hidden="true"></i>
+        <span class="m-0">Dell Technologies recommends all customers consider both the CVSS base score and any relevant temporal and environmental scores that may impact the potential severity associated with a particular security vulnerability.</span>
+    </div>
+    <h6 class="dds__mb-4 content-heading">Affected Products and Remediation</h6>
+    <p class="dds__mb-4 content-heading_details"><table>
+   <tbody>
+    <tr>
+     <th colspan="1" rowspan="1">CVE(s) Addressed</th>
+     <th colspan="1" rowspan="1">Product</th>
+     <th colspan="1" rowspan="1">Affected Version(s)</th>
+     <th colspan="1" rowspan="1">Updated Version(s)</th>
+     <th colspan="1" rowspan="1">Link to Update</th>
+    </tr>
+    <tr>
+     <td colspan="1" rowspan="2">CVE-2022-40304<br> &nbsp;</td>
+     <td colspan="1" rowspan="2">PowerScale OneFS<br> &nbsp;</td>
+     <td colspan="1" rowspan="1"> <p>9.1.0.0 through 9.1.0.27</p> <p>9.2.1.0 through 9.2.1.20</p> <p>9.4.0.0 through 9.4.0.11</p> </td>
+     <td colspan="1" rowspan="1"> <p>Download and install the latest RUP.</p> <p>&gt;= 9.1.0.28</p> <p>&gt;= 9.2.1.21</p> <p>&gt;= 9.4.0.13</p> <p>&gt;= 9.5.0.0</p> </td>
+     <td colspan="1" rowspan="10"><a href="https://www.dell.com/support/home/en-ie/product-support/product/isilon-onefs/drivers" target="_blank">PowerScale OneFS Downloads Area</a><br> &nbsp;</td>
+    </tr>
+    <tr>
+     <td colspan="1" rowspan="1"> <p>Any other version</p> </td>
+     <td colspan="1" rowspan="1"> <p>Upgrade your version of PowerScale OneFS.</p> </td>
+    </tr>
+    <tr>
+     <td colspan="1" rowspan="1"> <p>CVE-2023-25536</p> </td>
+     <td colspan="1" rowspan="1">PowerScale OneFS</td>
+     <td colspan="1" rowspan="1"> <p>9.4.0.0 through 9.4.0.11</p> </td>
+     <td colspan="1" rowspan="1"> <p>Download and install the latest RUP.</p> <p>&gt;= 9.4.0.12</p> </td>
+    </tr>
+    <tr>
+     <td colspan="1" rowspan="1"> <p>CVE-2023-25540</p> </td>
+     <td colspan="1" rowspan="1">PowerScale OneFS<br> &nbsp;</td>
+     <td colspan="1" rowspan="1"> <p>9.4.0.0 through 9.4.0.11</p> </td>
+     <td colspan="1" rowspan="1"> <p>Download and install the latest RUP.</p> <p>&gt;= 9.4.0.12</p> </td>
+    </tr>
+    <tr>
+     <td colspan="1" rowspan="1">&nbsp;CVE-2020-10735<br> &nbsp;</td>
+     <td colspan="1" rowspan="1">PowerScale OneFS<br> &nbsp;</td>
+     <td colspan="1" rowspan="1"> <p>9.4.0.0 through 9.4.0.11</p> <p>&nbsp;</p> </td>
+     <td colspan="1" rowspan="1"> <p>Download and install the latest RUP.</p> <p>&gt;= 9.4.0.12</p> </td>
+    </tr>
+    <tr>
+     <td colspan="1" rowspan="1"> <p>CVE-2021-0153</p> <p>CVE-2021-0154</p> <p>CVE-2021-0155</p> <p>CVE-2021-0159</p> <p>CVE-2021-0188</p> <p>CVE-2021-0189</p> <p>CVE-2021-0190</p> <p>CVE-2021-33060</p> <p>CVE-2021-33103</p> <p>CVE-2021-33122</p> <p>CVE-2021-33123</p> <p>CVE-2021-33124</p> <p>CVE-2022-21123</p> <p>CVE-2022-21125</p> <p>CVE-2022-21127</p> <p>CVE-2022-21166</p> <p>CVE-2022-21180</p> </td>
+     <td colspan="1" rowspan="1"> <p>A200</p> <p>A2000</p> <p>F800</p> <p>F810</p> <p>H400</p> <p>H500</p> <p>H600</p> <p>H5600</p> </td>
+     <td colspan="1" rowspan="1"> <p>9.5.0.x</p> <p>9.4.0.x</p> <p>9.3.0.x&nbsp;</p> <p>9.2.1.x</p> <p>9.2.0.x</p> <p>9.1.0.x</p> <p>9.0.0.x</p> <p>&nbsp;</p> </td>
+     <td colspan="1" rowspan="4"> <p>Download and install the latest NFP version &gt;= 11.6.1</p> &nbsp; <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> </td>
+    </tr>
+    <tr>
+     <td colspan="1" rowspan="1"> <p>CVE-2022-0004</p> <p>CVE-2021-21131</p> </td>
+     <td colspan="1" rowspan="1"> <p>A300</p> <p>A3000</p> <p>H700</p> <p>H7000</p> </td>
+     <td colspan="1" rowspan="1"> <p>9.5.0.x</p> <p>9.4.0.x</p> <p>9.3.0.x</p> <p>9.2.1.x</p> <p>9.2.0.x</p> <p>9.1.0.x</p> <p>9.0.0.x</p> <p>&nbsp;</p> </td>
+    </tr>
+    <tr>
+     <td colspan="1" rowspan="1"> <p>CVE-2022-0778</p> </td>
+     <td colspan="1" rowspan="1"> <p>A300</p> <p>A3000</p> <p>H700</p> <p>H7000</p> </td>
+     <td colspan="1" rowspan="1"> <p>9.5.0.x</p> <p>9.4.0.x</p> <p>9.3.0.x</p> <p>9.2.1.x</p> <p>9.2.0.x</p> <p>9.1.0.x</p> <p>9.0.0.x</p> </td>
+    </tr>
+    <tr>
+     <td colspan="1" rowspan="1"> <p>CVE-2023-23689</p> </td>
+     <td colspan="1" rowspan="1"> <p>A200</p> <p>A2000</p> <p>H400</p> <p>H500</p> <p>H600</p> <p>H5600</p> <p>F800</p> <p>F810</p> </td>
+     <td colspan="1" rowspan="1"> <p>9.5.0.x</p> <p>9.4.0.x</p> <p>9.3.0.x</p> <p>9.2.1.x</p> <p>9.2.0.x</p> <p>9.1.0.x</p> <p>9.0.0.x</p> <p>&nbsp;</p> </td>
+    </tr>
+    <tr>
+     <td colspan="1" rowspan="1"> <p>CVE-2021-28500</p> <p>CVE-2021-28501</p> <p>CVE-2021-28503</p> <p>CVE-2021-28506</p> <p>CVE-2021-28507</p> <p>CVE-2021-28496</p> </td>
+     <td colspan="1" rowspan="1"> <p>PowerScale OneFS with Arista Switch Series DCS-7304 and DCS-7308</p> </td>
+     <td colspan="1" rowspan="1"> <p>9.5.0.x</p> <p>9.4.0.x</p> <p>9.3.0.x</p> <p>9.2.1.x</p> <p>9.2.0.x</p> <p>9.1.0.x</p> <p>9.0.0.x</p> </td>
+     <td colspan="1" rowspan="1"> <p>Download and install Arista EOS &gt;=4.28.3</p> </td>
+    </tr>
+   </tbody>
+  </table> 
+  <p><strong>Note:</strong>&nbsp;All PowerScale related CVEs are addressed in the newly released PowerScale OneFS version 9.5.0.0</p></p>
+    <h6 class="dds__mb-4 content-heading">Workarounds and Mitigations</h6>
+    <p class="dds__mb-4 content-heading_details"><table>
+   <tbody>
+    <tr>
+     <td colspan="1" rowspan="1"><strong>CVEs</strong></td>
+     <td colspan="1" rowspan="1"><strong>Workarounds</strong></td>
+    </tr>
+    <tr>
+     <td colspan="1" rowspan="1">CVE-2023-25540</td>
+     <td colspan="1" rowspan="1">Manually set the permissions of /ifs/.ifsvar/modules/security_check&nbsp;to 755.<br> #chmod 755 /ifs/.ifsvar/modules/security_check</td>
+    </tr>
+    <tr>
+     <td colspan="1" rowspan="1">CVE-2023-25536</td>
+     <td colspan="1" rowspan="1">Manually remove the self-signed certificates on cluster nodes.<br> #isi_for_array "test -e /etc/ssl/certs/4a7a8630.0 &amp;&amp; rm -f /etc/ssl/certs/4a7a8630.0 || exit 0"</td>
+    </tr>
+   </tbody>
+  </table></p>
+    <h6 class="dds__mb-4 content-heading">Revision History</h6>
+    <p class="dds__mb-4 content-heading_details"><table><thead><tr><td colspan="1" rowspan="1"><strong>Revision</strong></td><td colspan="1" rowspan="1"><strong>Date</strong></td><td colspan="1" rowspan="1"><strong>Description</strong></td></tr></thead><tbody><tr><td colspan="1" rowspan="1">1.0</td><td colspan="1" rowspan="1">2023-02-28 </td><td colspan="1" rowspan="1">Initial release</td></tr><tr><td colspan="1" rowspan="1">1.1</td><td colspan="1" rowspan="1">2023-03-02</td><td colspan="1" rowspan="1">Added CVE-2023-25536 and updated Workaround and Mitigation section.</td></tr><tr><td colspan="1" rowspan="1">1.2</td><td colspan="1" rowspan="1">2023-05-17</td><td colspan="1" rowspan="1">Added Arista EOS CVEs</td></tr></tbody></table></p>
+    <h6 class="dds__mb-4 content-heading">Related Information</h6>
+    <p class="dds__mb-4 content-heading_details">
+        <a href="//www.dell.com/support/security/en-us/" target="_blank" rel="noopener" title="Dell Security Advisories and Notices">Dell Security Advisories and Notices</a><br /><a href="//www.dell.com/support/contents/en-us/article/product-support/self-support-knowledgebase/security-antivirus/alerts-vulnerabilities/dell-vulnerability-response-policy" target="_blank" rel="noopener" title="Dell Vulnerability Response Policy">Dell Vulnerability Response Policy</a><br /><a href="https://www.first.org/cvss/user-guide" target="_blank" rel="noopener" title="CVSS Scoring Guide">CVSS Scoring Guide</a>
+    </p>
+
+
+            
+
+
+
+
+    </div>
+
+
+            <!-- Severity Disclaimer Tab Content -->
+                
+                <!-- Legal Information Tab Content -->
+                <h4 id="legal-information" class="dds__mb-0 h4-heading header_mt">Legal Information</h4>
+                <hr class="dds__mb-8" />
+                
+    <p class="dds__mb-5 content-heading_details">The information in this Dell Technologies Security Advisory should be read and used to assist in avoiding situations that may arise from the problems described herein. Dell Technologies distributes Security Advisories to bring important security information to the attention of users of the affected product(s). Dell Technologies assesses the risk based on an average of risks across a diverse set of installed systems and may not represent the actual risk to your local installation and individual environment. It is recommended that all users determine the applicability of this information to their individual environments and take appropriate actions. The information set forth herein is provided "as is" without warranty of any kind. Dell Technologies expressly disclaims all warranties, either express or implied, including the warranties of merchantability, fitness for a particular purpose, title and non-infringement. In no event shall Dell Technologies, its affiliates or suppliers, be liable for any damages whatsoever arising from or related to the information contained herein or actions that you decide to take based thereon, including any direct, indirect, incidental, consequential, loss of business profits or special damages, even if Dell Technologies, its affiliates or suppliers have been advised of the possibility of such damages. Some states do not allow the exclusion or limitation of liability for consequential or incidental damages, so the foregoing limitation shall apply to the extent permissible under law.</p>
+
+            <!--<div class="tab-pane fade minHeight" id="legal-information" role="tabpanel" aria-labeledby="legal-information-tab">-->
+            <!-- Mobile -->
+            <!--</div>-->
+            <!-- Technical Advisory Information -->
+            <!-- Article Properties Tab Content -->
+            <h4 id="article-properties" class="dds__mb-0 h4-heading header_mt">Article Properties</h4>
+            <hr class="dds__mb-4">
+            
+    <h6 class="dds__mb-2 content-heading_prop">Affected Product</h6>
+    <p class="dds__mb-4 content-heading_details">
+        Product Security Information
+
+    </p>
+
+    <h6 class="dds__mb-2 content-heading_prop">Last Published Date</h6>
+    <p class="dds__mb-4 content-heading_details">
+29 May 2023    </p>
+
+    <h6 class="dds__mb-2 content-heading_prop">Version</h6>
+    <p class="dds__mb-4 content-heading_details">5</p>
+    <h6 class="dds__mb-2 content-heading_prop">Article Type</h6>
+    <p class="dds__mb-4 content-heading_details">
+        Dell Security Advisory
+
+    </p>
+  
+    </div>
+</div>
+<script type="application/x-suppress" data-nonce="NjM4MzI5NjExMDY3NzUyMjMy0">
+    $('document').ready(function () {
+        Dell.Metrics.sc.servicetag = ''; //s_dell.prop17
+        var serialnum = '' != null ? ''.split('|')[0] : '';
+        var tagid = '' != null ? ''.split('|')[1] : '';
+        if (serialnum != '') {
+            Dell.Metrics.sc.emcserialnum = serialnum; //s_dell.prop51
+        }
+        if (tagid != '') {
+            Dell.Metrics.sc.emcproducts = tagid; //s_dell.prop51
+        }
+
+        Dell.Metrics.sc.country = 'us';
+        Dell.Metrics.sc.language = 'en';
+        Dell.Metrics.sc.segment = 'bsd';
+        Dell.Metrics.sc.customerset = '04';
+        Dell.Metrics.sc.region = 'us';
+        Dell.Metrics.sc.cms = "Fuel";
+        Dell.Metrics.sc.pagename = "us|en|04|bsd|kbdoc|print";
+        Dell.Metrics.sc.supportvisit = "true";
+        Dell.Metrics.sc.supportappindex = "111.700.100.000";
+
+        applyStylesPrintLayout();
+
+        if ('True' === "True") {
+            $('#tabcontent table:not(#ArticleContent)').attr('border', '1');
+        }
+    });
+</script>
+
+</div>
+    
+    
+    <script data-src="https://www.dellcdn.com/support/staticcdn/external/js/adobe/1.8/visitorapicoveoml.min.js" type="application/x-suppress" data-nonce="NjM4MzI5NjExMDY3NzUyMjMy0"></script>
+    <script async type="application/x-suppress" data-src="//nexus.dell.com/dell/eSupport/Bootstrap.js" data-nonce="NjM4MzI5NjExMDY3NzUyMjMy0" defer></script>
+    <script type="text/javascript" nonce="NjM4MzI5NjExMDY3NzUyMjMy0">
+        Dell.Loader=Dell.Loader||{},Dell.Loader.scripts={},function(t,e){(function(){"use strict";var r=0,n=e.createElement("script"),a=n.async,i=[],l=[],s={},u={},c=e.getElementsByTagName("head")[0],o=!1,d=0,f=0,p=!1,g=Dell.perfmetrics,b=e.createDocumentFragment(),A=0,m=(e.querySelector(".razor"),function(t){var e=!1,r=0;for(r=0;t>=r;r++)e=s[r];if(e)for(r=t+1;A>r;r++){var n=i[r].getAttribute?i[r].getAttribute("defer"):null,a=i[r].getAttribute?i[r].getAttribute("data-src"):null,l=i[r].getAttribute?i[r].getAttribute("data-nonce"):null;if(i[r].getAttribute("data-src")&&!s[r])break;null!=a||u[r]||null!=n&&!p||C(i[r],r,l)}}),h=function(t,e){var r=t.getAttribute("data-seq");t.getAttribute("defer"),void 0===s[r]&&(s[r]=!0,d++,m(parseInt(r))),g&&Dell.perfmetrics.end("script.load-"+D(e)),y()},y=function(){"undefined"!=typeof jQuery&&(!o&&A>d+f?($.holdReady(!0),o=!0):o&&d+f>=A&&($.holdReady(!1),jQuery.ready(),o=!1))},v=function(){for(var t;l[0]&&"loaded"==l[0].readyState;)(t=l.shift()).onreadystatechange=null,g&&Dell.perfmetrics.start("script.load-"+D(t.getAttribute("src"))),c.appendChild(t),h(t,t.getAttribute("src"))},D=function(t){var e=t.split("/").pop();return null!=t?e.split("?")[0]:t},x=function(t,r,i,s){var u=t.toLowerCase();(n=e.createElement("script")).setAttribute("data-seq",i),null!=r.crossOrigin&&null!=r.crossOrigin&&"anonymous"===r.crossOrigin&&n.setAttribute("crossorigin","anonymous"),-1===u.indexOf("nexus")&&-1!=u.indexOf("dell.com")||-1==u.indexOf("://")&&u.indexOf("//"),a?n.async=!1:r.readyState?(l.push(n),n.onreadystatechange=v):n.setAttribute("defer","true"),null!=s&&n.setAttribute("nonce",s),n.src=t,n.onreadystatechange||(n.onload=function(){h(this,t)},b.appendChild(n),g&&Dell.perfmetrics.start("script.load-"+D(t)))},C=function(t,r,i){g&&Dell.perfmetrics.start("script.inline-"+r),n=e.createElement("script"),a&&(n.async=!1),u[r]=!0,n.textContent?n.textContent=t.text:n.text=t.text,n.setAttribute("data-seq",r),null!=i&&n.setAttribute("nonce",i),c.appendChild(n),t.parentNode.removeChild(t),d++,g&&Dell.perfmetrics.end("script.inline-"+r)};t.addEventListener("load",function(){var t=!1;for(p=!0,b=e.createDocumentFragment(),r=0;A>r;r++)if(i[r].getAttribute&&null!=i[r].getAttribute("defer")){var n=i[r].getAttribute("data-src"),a=i[r].getAttribute?i[r].getAttribute("data-nonce"):null;n?(x(n,i[r],r,a),t=!0):t||C(i[r],r,a)}b.childNodes.length>0&&c.appendChild(b)},!1),function(){var t=!1;for(i=function(){var t=e.getElementsByTagName("script"),n=[],a=[];for(A=t.length,r=A-1;r>=0;r--)t[r].getAttribute&&"application/x-suppress"==t[r].getAttribute("type")&&(null!=t[r].getAttribute("defer")?(a.unshift(t[r]),f++):n.unshift(t[r]));return n.concat(a)}(),A=i.length,r=0;A>r;r++){var n=i[r].getAttribute("data-src"),a=i[r].getAttribute?i[r].getAttribute("data-nonce"):null;null==i[r].getAttribute("defer")&&(n?(x(n,i[r],r,a),t=!0):t||C(i[r],r,a))}c.appendChild(b);var l=e.documentElement;l.className=l.className.replace(/\bno-js\b/,"js")}()}).call(Dell.Loader.scripts)}(window,document);
+    </script>
+<script type="text/javascript" nonce="9876c44fc1b50d5094ffe60da2033a15" src="/sYt6qiM6C/OWkv/_3HRA/f9a52L1SYO/MzUAAg/Jw9z/HzgjUngB"></script><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"
+                                                             type="text/css" nonce="9876c44fc1b50d5094ffe60da2033a15" href="/_sec/cp_challenge/sec-4-0.css">
+                                        <script nonce="9876c44fc1b50d5094ffe60da2033a15" src="/_sec/cp_challenge/sec-cpt-4-0.js" async defer></script>
+                                        <div id="sec-overlay" style="display:none;">
+                                        <div id="sec-container">
+                                        </div>
+                                      </div></body>
+</html>

@@ -1,0 +1,1097 @@
+[
+    {
+        "article_id": "000153689",
+        "title": "DSA-2020-054: Dell EMC Isilon OneFS Security Update for DNS Protocol Vulnerabilities",
+        "severity": "Medium",
+        "publish_first": "2020-03-23T00:00:00",
+        "publish_last": "2021-04-10T04:13:13",
+        "dsa_url": "https://www.dell.com/support/kbdoc/en-us/000153689/dsa-2020-054-dell-emc-isilon-onefs-security-update-for-dns-protocol-vulnerabilities",
+        "kb_print_url": "https://www.dell.com/support/kbdoc/en-us/article/lkbprint?ArticleNumber=000153689&AccessLevel=10&Lang=en",
+        "cve_ids": [
+            "CVE-2020-5347"
+        ]
+    },
+    {
+        "article_id": "000153700",
+        "title": "DSA-2020-217: Dell EMC PowerScale OneFS and Dell EMC Isilon OneFS Security Update for Expat Vulnerability",
+        "severity": "High",
+        "publish_first": "2020-09-15T00:00:00",
+        "publish_last": "2021-05-22T08:28:43",
+        "dsa_url": "https://www.dell.com/support/kbdoc/en-us/000153700/dsa-2020-217-dell-emc-powerscale-onefs-and-dell-emc-isilon-onefs-security-update-for-expat-vulnerability",
+        "kb_print_url": "https://www.dell.com/support/kbdoc/en-us/article/lkbprint?ArticleNumber=000153700&AccessLevel=10&Lang=en",
+        "cve_ids": []
+    },
+    {
+        "article_id": "000153709",
+        "title": "DSA-2020-142: Dell EMC Isilon OneFS and Dell EMC PowerScale OneFS Security Update for SyncIQ Privilege Escalation Vulnerability with /ifs/.ifsvar directory",
+        "severity": "Critical",
+        "publish_first": "2020-08-31T00:00:00",
+        "publish_last": "2021-05-22T08:28:42",
+        "dsa_url": "https://www.dell.com/support/kbdoc/en-us/000153709/dsa-2020-142-dell-emc-isilon-onefs-and-dell-emc-powerscale-onefs-security-update-for-synciq-privilege-escalation-vulnerability-with-ifs-ifsvar-directory",
+        "kb_print_url": "https://www.dell.com/support/kbdoc/en-us/article/lkbprint?ArticleNumber=000153709&AccessLevel=10&Lang=en",
+        "cve_ids": [
+            "CVE-2020-5369"
+        ]
+    },
+    {
+        "article_id": "000153710",
+        "title": "DSA-2020-189: Dell EMC Isilon OneFS and Dell EMC PowerScale Security Update for Buffer Overflow Vulnerability",
+        "severity": "Medium",
+        "publish_first": "2020-08-24T00:00:00",
+        "publish_last": "2021-05-22T08:28:42",
+        "dsa_url": "https://www.dell.com/support/kbdoc/en-us/000153710/dsa-2020-189-dell-emc-isilon-onefs-and-dell-emc-powerscale-security-update-for-buffer-overflow-vulnerability",
+        "kb_print_url": "https://www.dell.com/support/kbdoc/en-us/article/lkbprint?ArticleNumber=000153710&AccessLevel=10&Lang=en",
+        "cve_ids": [
+            "CVE-2020-5383"
+        ]
+    },
+    {
+        "article_id": "000153803",
+        "title": "DSA-2019-042: Dell EMC Isilon OneFS and IsilonSD Edge Security Update for Multiple Vulnerabilities",
+        "severity": "High",
+        "publish_first": "2019-03-11T00:00:00",
+        "publish_last": "2021-05-22T08:27:11",
+        "dsa_url": "https://www.dell.com/support/kbdoc/en-us/000153803/dsa-2019-042-dell-emc-isilon-onefs-and-isilonsd-edge-security-update-for-multiple-vulnerabilities",
+        "kb_print_url": "https://www.dell.com/support/kbdoc/en-us/article/lkbprint?ArticleNumber=000153803&AccessLevel=10&Lang=en",
+        "cve_ids": [
+            "CVE-2018-0734",
+            "CVE-2018-15473",
+            "CVE-2018-6922",
+            "CVE-2018-6923"
+        ]
+    },
+    {
+        "article_id": "000153842",
+        "title": "DSA-2019-106: Dell EMC Isilon OneFS Security Update for Multiple Third Party Component Vulnerabilities",
+        "severity": "Critical",
+        "publish_first": "2019-07-09T00:00:00",
+        "publish_last": "2021-05-22T08:31:35",
+        "dsa_url": "https://www.dell.com/support/kbdoc/en-us/000153842/dsa-2019-106-dell-emc-isilon-onefs-security-update-for-multiple-third-party-component-vulnerabilities",
+        "kb_print_url": "https://www.dell.com/support/kbdoc/en-us/article/lkbprint?ArticleNumber=000153842&AccessLevel=10&Lang=en",
+        "cve_ids": [
+            "CVE-2018-16890",
+            "CVE-2019-3822",
+            "CVE-2019-3823"
+        ]
+    },
+    {
+        "article_id": "000153843",
+        "title": "DSA-2019-143: Dell EMC Isilon OneFS Security Update for Embedded iconv Buffer Overflow Vulnerability",
+        "severity": "Critical",
+        "publish_first": "2019-09-27T00:00:00",
+        "publish_last": "2021-05-22T08:25:44",
+        "dsa_url": "https://www.dell.com/support/kbdoc/en-us/000153843/dsa-2019-143-dell-emc-isilon-onefs-security-update-for-embedded-iconv-buffer-overflow-vulnerability",
+        "kb_print_url": "https://www.dell.com/support/kbdoc/en-us/article/lkbprint?ArticleNumber=000153843&AccessLevel=10&Lang=en",
+        "cve_ids": [
+            "CVE-2019-5600"
+        ]
+    },
+    {
+        "article_id": "000153845",
+        "title": "DSA-2020-045: Dell EMC Isilon OneFS Security Update for NTP Vulnerability",
+        "severity": "High",
+        "publish_first": "2020-02-18T00:00:00",
+        "publish_last": "2021-05-22T08:29:23",
+        "dsa_url": "https://www.dell.com/support/kbdoc/en-us/000153845/dsa-2020-045-dell-emc-isilon-onefs-security-update-for-ntp-vulnerability",
+        "kb_print_url": "https://www.dell.com/support/kbdoc/en-us/article/lkbprint?ArticleNumber=000153845&AccessLevel=10&Lang=en",
+        "cve_ids": [
+            "CVE-2019-11331"
+        ]
+    },
+    {
+        "article_id": "000153846",
+        "title": "DSA-2019-151: Dell EMC Isilon OneFS Security Update for Telnet Vulnerability",
+        "severity": "High",
+        "publish_first": "2019-10-25T00:00:00",
+        "publish_last": "2021-05-22T08:25:44",
+        "dsa_url": "https://www.dell.com/support/kbdoc/en-us/000153846/dsa-2019-151-dell-emc-isilon-onefs-security-update-for-telnet-vulnerability",
+        "kb_print_url": "https://www.dell.com/support/kbdoc/en-us/article/lkbprint?ArticleNumber=000153846&AccessLevel=10&Lang=en",
+        "cve_ids": [
+            "CVE-2019-0053"
+        ]
+    },
+    {
+        "article_id": "000153847",
+        "title": "DSA-2019-136: Dell EMC Isilon OneFS Security Update for Intel-SA-00233  Microarchitectural Data Sampling (MDS) Vulnerabilities",
+        "severity": "Medium",
+        "publish_first": "2019-09-17T00:00:00",
+        "publish_last": "2021-11-23T17:21:01",
+        "dsa_url": "https://www.dell.com/support/kbdoc/en-us/000153847/dsa-2019-136-dell-emc-isilon-onefs-security-update-for-intel-sa-00233-microarchitectural-data-sampling-mds-vulnerabilities",
+        "kb_print_url": "https://www.dell.com/support/kbdoc/en-us/article/lkbprint?ArticleNumber=000153847&AccessLevel=10&Lang=en",
+        "cve_ids": [
+            "CVE-2018-12126",
+            "CVE-2018-12127",
+            "CVE-2018-12130",
+            "CVE-2019-11091"
+        ]
+    },
+    {
+        "article_id": "000153853",
+        "title": "DSA-2020-124: Dell EMC Isilon OneFS Security Update for Multiple Vulnerabilities",
+        "severity": "Medium",
+        "publish_first": "2020-05-18T00:00:00",
+        "publish_last": "2021-05-22T08:29:23",
+        "dsa_url": "https://www.dell.com/support/kbdoc/en-us/000153853/dsa-2020-124-dell-emc-isilon-onefs-security-update-for-multiple-vulnerabilities",
+        "kb_print_url": "https://www.dell.com/support/kbdoc/en-us/article/lkbprint?ArticleNumber=000153853&AccessLevel=10&Lang=en",
+        "cve_ids": [
+            "CVE-2020-5364",
+            "CVE-2020-5365"
+        ]
+    },
+    {
+        "article_id": "000153854",
+        "title": "DSA-2019-003: Dell EMC Isilon OneFS Security Update for Multiple Multiprocessor Side-Channel Vulnerabilities",
+        "severity": "Medium",
+        "publish_first": "2019-01-15T00:00:00",
+        "publish_last": "2021-05-22T08:27:34",
+        "dsa_url": "https://www.dell.com/support/kbdoc/en-us/000153854/dsa-2019-003-dell-emc-isilon-onefs-security-update-for-multiple-multiprocessor-side-channel-vulnerabilities",
+        "kb_print_url": "https://www.dell.com/support/kbdoc/en-us/article/lkbprint?ArticleNumber=000153854&AccessLevel=10&Lang=en",
+        "cve_ids": [
+            "CVE-2018-3620",
+            "CVE-2018-3639",
+            "CVE-2018-3640"
+        ]
+    },
+    {
+        "article_id": "000153855",
+        "title": "DSA-2020-155: Dell EMC Isilon OneFS and Dell EMC PowerScale Security Update for a Permissions Vulnerability",
+        "severity": "High",
+        "publish_first": "2020-06-19T00:00:00",
+        "publish_last": "2021-02-15T20:43:00",
+        "dsa_url": "https://www.dell.com/support/kbdoc/en-us/000153855/dsa-2020-155-dell-emc-isilon-onefs-and-dell-emc-powerscale-security-update-for-a-permissions-vulnerability",
+        "kb_print_url": "https://www.dell.com/support/kbdoc/en-us/article/lkbprint?ArticleNumber=000153855&AccessLevel=10&Lang=en",
+        "cve_ids": [
+            "CVE-2020-5371"
+        ]
+    },
+    {
+        "article_id": "000153856",
+        "title": "DSA-2020-040: Dell EMC Isilon OneFS Security Update for Multicast Listener Discovery Protocol, version 2 (MLDv2) Vulnerability",
+        "severity": "High",
+        "publish_first": "2020-02-12T00:00:00",
+        "publish_last": "2021-05-22T08:29:23",
+        "dsa_url": "https://www.dell.com/support/kbdoc/en-us/000153856/dsa-2020-040-dell-emc-isilon-onefs-security-update-for-multicast-listener-discovery-protocol-version-2-mldv2-vulnerability",
+        "kb_print_url": "https://www.dell.com/support/kbdoc/en-us/article/lkbprint?ArticleNumber=000153856&AccessLevel=10&Lang=en",
+        "cve_ids": [
+            "CVE-2019-5608"
+        ]
+    },
+    {
+        "article_id": "000153857",
+        "title": "DSA-2019-142: Dell EMC Isilon OneFS Security Update for OpenSSH Vulnerability",
+        "severity": "Medium",
+        "publish_first": "2019-10-01T00:00:00",
+        "publish_last": "2021-11-23T17:25:00",
+        "dsa_url": "https://www.dell.com/support/kbdoc/en-us/000153857/dsa-2019-142-dell-emc-isilon-onefs-security-update-for-openssh-vulnerability",
+        "kb_print_url": "https://www.dell.com/support/kbdoc/en-us/article/lkbprint?ArticleNumber=000153857&AccessLevel=10&Lang=en",
+        "cve_ids": [
+            "CVE-2019-6111"
+        ]
+    },
+    {
+        "article_id": "000153860",
+        "title": "DSA-2020-086: Dell EMC Isilon OneFS Security Update for FreeBSD libfetch Vulnerability",
+        "severity": "High",
+        "publish_first": "2020-04-11T00:00:00",
+        "publish_last": "2021-05-22T08:27:34",
+        "dsa_url": "https://www.dell.com/support/kbdoc/en-us/000153860/dsa-2020-086-dell-emc-isilon-onefs-security-update-for-freebsd-libfetch-vulnerability",
+        "kb_print_url": "https://www.dell.com/support/kbdoc/en-us/article/lkbprint?ArticleNumber=000153860&AccessLevel=10&Lang=en",
+        "cve_ids": [
+            "CVE-2020-7450"
+        ]
+    },
+    {
+        "article_id": "000153861",
+        "title": "DSA-2020-051: Dell EMC Isilon OneFS Security Update for SMB /ifs Share Vulnerability",
+        "severity": "Medium",
+        "publish_first": "2020-03-09T00:00:00",
+        "publish_last": "2021-05-22T08:24:02",
+        "dsa_url": "https://www.dell.com/support/kbdoc/en-us/000153861/dsa-2020-051-dell-emc-isilon-onefs-security-update-for-smb-ifs-share-vulnerability",
+        "kb_print_url": "https://www.dell.com/support/kbdoc/en-us/article/lkbprint?ArticleNumber=000153861&AccessLevel=10&Lang=en",
+        "cve_ids": [
+            "CVE-2020-5338"
+        ]
+    },
+    {
+        "article_id": "000153864",
+        "title": "DSA-2019-150: Dell EMC Isilon OneFS Security Update for UNIX File System (UFS) and Fast File System (FFS) Kernel Component Vulnerabilities",
+        "severity": "Medium",
+        "publish_first": "2019-10-25T00:00:00",
+        "publish_last": "2021-05-22T08:25:46",
+        "dsa_url": "https://www.dell.com/support/kbdoc/en-us/000153864/dsa-2019-150-dell-emc-isilon-onefs-security-update-for-unix-file-system-ufs-and-fast-file-system-ffs-kernel-component-vulnerabilities",
+        "kb_print_url": "https://www.dell.com/support/kbdoc/en-us/article/lkbprint?ArticleNumber=000153864&AccessLevel=10&Lang=en",
+        "cve_ids": [
+            "CVE-2019-5601"
+        ]
+    },
+    {
+        "article_id": "000153865",
+        "title": "DSA-2020-164: Dell EMC Isilon OneFS and Dell EMC PowerScale OneFS Security Update for IPv6 Vulnerabilities",
+        "severity": "High",
+        "publish_first": "2020-07-13T00:00:00",
+        "publish_last": "2021-05-22T08:25:44",
+        "dsa_url": "https://www.dell.com/support/kbdoc/en-us/000153865/dsa-2020-164-dell-emc-isilon-onefs-and-dell-emc-powerscale-onefs-security-update-for-ipv6-vulnerabilities",
+        "kb_print_url": "https://www.dell.com/support/kbdoc/en-us/article/lkbprint?ArticleNumber=000153865&AccessLevel=10&Lang=en",
+        "cve_ids": [
+            "CVE-2019-5611",
+            "CVE-2020-7451"
+        ]
+    },
+    {
+        "article_id": "000153866",
+        "title": "DSA-2019-100: Dell EMC Isilon OneFS Security Update for OpenSSL Vulnerabilities",
+        "severity": "Medium",
+        "publish_first": "2019-07-09T00:00:00",
+        "publish_last": "2021-05-22T08:25:45",
+        "dsa_url": "https://www.dell.com/support/kbdoc/en-us/000153866/dsa-2019-100-dell-emc-isilon-onefs-security-update-for-openssl-vulnerabilities",
+        "kb_print_url": "https://www.dell.com/support/kbdoc/en-us/article/lkbprint?ArticleNumber=000153866&AccessLevel=10&Lang=en",
+        "cve_ids": [
+            "CVE-2019-1559"
+        ]
+    },
+    {
+        "article_id": "000153867",
+        "title": "DSA-2020-093: Dell EMC Isilon OneFS  and Dell EMC PowerScale OneFS Security Update for NFS Configuration Vulnerabilities",
+        "severity": "High",
+        "publish_first": "2020-04-10T00:00:00",
+        "publish_last": "2021-04-10T04:15:43",
+        "dsa_url": "https://www.dell.com/support/kbdoc/en-us/000153867/dsa-2020-093-dell-emc-isilon-onefs-and-dell-emc-powerscale-onefs-security-update-for-nfs-configuration-vulnerabilities",
+        "kb_print_url": "https://www.dell.com/support/kbdoc/en-us/article/lkbprint?ArticleNumber=000153867&AccessLevel=10&Lang=en",
+        "cve_ids": [
+            "CVE-2020-5353"
+        ]
+    },
+    {
+        "article_id": "000153868",
+        "title": "DSA-2020-096: Dell EMC Isilon OneFS Security Update for Insecure SSHD Configuration Vulnerability",
+        "severity": "Medium",
+        "publish_first": "2020-05-11T00:00:00",
+        "publish_last": "2021-11-23T17:28:01",
+        "dsa_url": "https://www.dell.com/support/kbdoc/en-us/000153868/dsa-2020-096-dell-emc-isilon-onefs-security-update-for-insecure-sshd-configuration-vulnerability",
+        "kb_print_url": "https://www.dell.com/support/kbdoc/en-us/article/lkbprint?ArticleNumber=000153868&AccessLevel=10&Lang=en",
+        "cve_ids": [
+            "CVE-2020-5355"
+        ]
+    },
+    {
+        "article_id": "000153915",
+        "title": "DSA-2020-044: Dell EMC Isilon OneFS Security Update for CPython Vulnerability",
+        "severity": "Medium",
+        "publish_first": "2020-02-17T00:00:00",
+        "publish_last": "2021-05-22T08:24:00",
+        "dsa_url": "https://www.dell.com/support/kbdoc/en-us/000153915/dsa-2020-044-dell-emc-isilon-onefs-security-update-for-cpython-vulnerability",
+        "kb_print_url": "https://www.dell.com/support/kbdoc/en-us/article/lkbprint?ArticleNumber=000153915&AccessLevel=10&Lang=en",
+        "cve_ids": [
+            "CVE-2016-0772"
+        ]
+    },
+    {
+        "article_id": "000153916",
+        "title": "DSA-2020-018: Dell EMC Isilon OneFS Security Update for Improper Authorization Vulnerability",
+        "severity": "High",
+        "publish_first": "2020-01-28T00:00:00",
+        "publish_last": "2021-05-22T08:27:37",
+        "dsa_url": "https://www.dell.com/support/kbdoc/en-us/000153916/dsa-2020-018-dell-emc-isilon-onefs-security-update-for-improper-authorization-vulnerability",
+        "kb_print_url": "https://www.dell.com/support/kbdoc/en-us/article/lkbprint?ArticleNumber=000153916&AccessLevel=10&Lang=en",
+        "cve_ids": [
+            "CVE-2020-5318"
+        ]
+    },
+    {
+        "article_id": "000153928",
+        "title": "DSA-2020-039: Dell EMC Isilon OneFS Security Update for a SyncIQ Vulnerability",
+        "severity": "Critical",
+        "publish_first": "2020-02-21T00:00:00",
+        "publish_last": "2021-04-10T04:15:45",
+        "dsa_url": "https://www.dell.com/support/kbdoc/en-us/000153928/dsa-2020-039-dell-emc-isilon-onefs-security-update-for-a-synciq-vulnerability",
+        "kb_print_url": "https://www.dell.com/support/kbdoc/en-us/article/lkbprint?ArticleNumber=000153928&AccessLevel=10&Lang=en",
+        "cve_ids": [
+            "CVE-2020-5328"
+        ]
+    },
+    {
+        "article_id": "000180922",
+        "title": "DSA-2020-227: Dell EMC PowerScale OneFS and Dell EMC Isilon OneFS Security Update for SmartLock Compliance Mode Privilege Escalation Vulnerability",
+        "severity": "Critical",
+        "publish_first": "2020-11-12T00:00:00",
+        "publish_last": "2021-11-23T13:17:25",
+        "dsa_url": "https://www.dell.com/support/kbdoc/en-us/000180922/dsa-2020-227-dell-emc-powerscale-onefs-and-dell-emc-isilon-onefs-security-update-for-smartlock-compliance-mode-privilege-escalation-vulnerability",
+        "kb_print_url": "https://www.dell.com/support/kbdoc/en-us/article/lkbprint?ArticleNumber=000180922&AccessLevel=10&Lang=en",
+        "cve_ids": [
+            "CVE-2020-26181"
+        ]
+    },
+    {
+        "article_id": "000180945",
+        "title": "DSA-2020-225: Dell EMC Isilon OneFS and Dell EMC PowerScale OneFS Security Update for remotesupport User Vulnerability",
+        "severity": "Medium",
+        "publish_first": "2020-10-01T00:00:00",
+        "publish_last": "2021-11-23T13:25:30",
+        "dsa_url": "https://www.dell.com/support/kbdoc/en-us/000180945/dsa-2020-225-dell-emc-isilon-onefs-and-dell-emc-powerscale-onefs-security-update-for-remotesupport-user-vulnerability",
+        "kb_print_url": "https://www.dell.com/support/kbdoc/en-us/article/lkbprint?ArticleNumber=000180945&AccessLevel=10&Lang=en",
+        "cve_ids": [
+            "CVE-2020-26180"
+        ]
+    },
+    {
+        "article_id": "000180947",
+        "title": "DSA-2020-226: Dell EMC PowerScale OneFS and Dell EMC Isilon OneFS Security Update for FreeBSD Vulnerability",
+        "severity": "High",
+        "publish_first": "2020-10-29T00:00:00",
+        "publish_last": "2021-11-23T17:33:00",
+        "dsa_url": "https://www.dell.com/support/kbdoc/en-us/000180947/dsa-2020-226-dell-emc-powerscale-onefs-and-dell-emc-isilon-onefs-security-update-for-freebsd-vulnerability",
+        "kb_print_url": "https://www.dell.com/support/kbdoc/en-us/article/lkbprint?ArticleNumber=000180947&AccessLevel=10&Lang=en",
+        "cve_ids": [
+            "CVE-2020-7460"
+        ]
+    },
+    {
+        "article_id": "000182873",
+        "title": "DSA-2021-009: Dell PowerScale OneFS Security Update for Multiple Vulnerabilities",
+        "severity": "Critical",
+        "publish_first": "2021-02-08T17:43:15",
+        "publish_last": "2021-11-23T13:08:19",
+        "dsa_url": "https://www.dell.com/support/kbdoc/en-us/000182873/dsa-2021-009-dell-powerscale-onefs-security-update-for-multiple-vulnerabilities",
+        "kb_print_url": "https://www.dell.com/support/kbdoc/en-us/article/lkbprint?ArticleNumber=000182873&AccessLevel=10&Lang=en",
+        "cve_ids": [
+            "CVE-2020-26191",
+            "CVE-2020-26192",
+            "CVE-2020-26193",
+            "CVE-2020-26194",
+            "CVE-2020-26195",
+            "CVE-2020-26196",
+            "CVE-2021-21502"
+        ]
+    },
+    {
+        "article_id": "000183714",
+        "title": "DSA-2021-023: Dell EMC PowerScale OneFS contains a Security Update for Multiple Third-Party Component Vulnerabilities",
+        "severity": "High",
+        "publish_first": "2022-07-07T18:22:11",
+        "publish_last": "2022-11-14T20:45:00",
+        "dsa_url": "https://www.dell.com/support/kbdoc/en-us/000183714/dsa-2021-023-dell-emc-powerscale-onefs-contains-a-security-update-for-multiple-third-party-component-vulnerabilities",
+        "kb_print_url": "https://www.dell.com/support/kbdoc/en-us/article/lkbprint?ArticleNumber=000183714&AccessLevel=10&Lang=en",
+        "cve_ids": [
+            "CVE-2020-11655",
+            "CVE-2020-11656",
+            "CVE-2020-13434",
+            "CVE-2020-13435",
+            "CVE-2020-13630",
+            "CVE-2020-13631",
+            "CVE-2020-13632",
+            "CVE-2020-7469"
+        ]
+    },
+    {
+        "article_id": "000183717",
+        "title": "DSA-2021-011: Dell EMC PowerScale OneFS Contains a Security Update for Multiple Vulnerabilities",
+        "severity": "High",
+        "publish_first": "2021-03-02T22:23:44",
+        "publish_last": "2021-03-03T00:25:15",
+        "dsa_url": "https://www.dell.com/support/kbdoc/en-us/000183717/dsa-2021-011-dell-emc-powerscale-onefs-contains-a-security-update-for-multiple-vulnerabilities",
+        "kb_print_url": "https://www.dell.com/support/kbdoc/en-us/article/lkbprint?ArticleNumber=000183717&AccessLevel=10&Lang=en",
+        "cve_ids": [
+            "CVE-2021-21503",
+            "CVE-2021-21506"
+        ]
+    },
+    {
+        "article_id": "000185202",
+        "title": "DSA-2021-048: Dell PowerScale OneFS Security Update for Multiple Vulnerabilities",
+        "severity": "Critical",
+        "publish_first": "2021-04-12T15:15:58",
+        "publish_last": "2021-09-28T18:53:06",
+        "dsa_url": "https://www.dell.com/support/kbdoc/en-us/000185202/dsa-2021-048-dell-emc-powerscale-onefs-security-update-for-multiple-vulnerabilities",
+        "kb_print_url": "https://www.dell.com/support/kbdoc/en-us/article/lkbprint?ArticleNumber=000185202&AccessLevel=10&Lang=en",
+        "cve_ids": [
+            "CVE-2020-26197",
+            "CVE-2021-21502",
+            "CVE-2021-21526"
+        ]
+    },
+    {
+        "article_id": "000185203",
+        "title": "DSA-2021-049: Dell PowerScale OneFS Security Update for Multiple Third-Party Components Vulnerability",
+        "severity": "Critical",
+        "publish_first": "2021-04-12T15:39:46",
+        "publish_last": "2021-05-22T08:28:01",
+        "dsa_url": "https://www.dell.com/support/kbdoc/en-us/000185203/dsa-2021-049-dell-emc-powerscale-onefs-security-update-for-multiple-third-party-components-vulnerability",
+        "kb_print_url": "https://www.dell.com/support/kbdoc/en-us/article/lkbprint?ArticleNumber=000185203&AccessLevel=10&Lang=en",
+        "cve_ids": []
+    },
+    {
+        "article_id": "000185978",
+        "title": "DSA-2021-064: Dell EMC PowerScale OneFS Security Update for Multiple Vulnerabilities",
+        "severity": "Critical",
+        "publish_first": "2021-04-29T01:14:50",
+        "publish_last": "2021-05-03T18:17:03",
+        "dsa_url": "https://www.dell.com/support/kbdoc/en-us/000185978/dsa-2021-064-dell-emc-powerscale-onefs-security-update-for-multiple-vulnerabilities",
+        "kb_print_url": "https://www.dell.com/support/kbdoc/en-us/article/lkbprint?ArticleNumber=000185978&AccessLevel=10&Lang=en",
+        "cve_ids": [
+            "CVE-2021-21527",
+            "CVE-2021-21550"
+        ]
+    },
+    {
+        "article_id": "000188148",
+        "title": "DSA-2021-097: Dell PowerScale OneFS Security Update for Multiple Proprietary Component Vulnerabilities.",
+        "severity": "Critical",
+        "publish_first": "2021-06-09T01:02:15",
+        "publish_last": "2022-02-18T15:53:11",
+        "dsa_url": "https://www.dell.com/support/kbdoc/en-us/000188148/dell-powerscale-onefs-security-update-for-multiple-security-vulnerabilities",
+        "kb_print_url": "https://www.dell.com/support/kbdoc/en-us/article/lkbprint?ArticleNumber=000188148&AccessLevel=10&Lang=en",
+        "cve_ids": [
+            "CVE-2021-21553",
+            "CVE-2021-21562",
+            "CVE-2021-21563",
+            "CVE-2021-21565"
+        ]
+    },
+    {
+        "article_id": "000189495",
+        "title": "DSA-2021-123: Dell PowerScale OneFS Security Update for multiple vulnerabilities",
+        "severity": "Critical",
+        "publish_first": "2021-07-09T17:42:41",
+        "publish_last": "2022-02-15T23:38:08",
+        "dsa_url": "https://www.dell.com/support/kbdoc/en-us/000189495/dsa-2021-123-dell-powerscale-onefs-security-update-for-multiple-vulnerabilities",
+        "kb_print_url": "https://www.dell.com/support/kbdoc/en-us/article/lkbprint?ArticleNumber=000189495&AccessLevel=10&Lang=en",
+        "cve_ids": [
+            "CVE-2021-21567",
+            "CVE-2021-3177"
+        ]
+    },
+    {
+        "article_id": "000190408",
+        "title": "DSA-2021-142: Dell PowerScale OneFS Security Update for Multiple Vulnerabilities",
+        "severity": "Critical",
+        "publish_first": "2021-08-09T20:41:53",
+        "publish_last": "2022-04-13T17:24:01",
+        "dsa_url": "https://www.dell.com/support/kbdoc/en-us/000190408/dsa-2021-142-dell-powerscale-onefs-security-update-for-multiple-vulnerabilities",
+        "kb_print_url": "https://www.dell.com/support/kbdoc/en-us/article/lkbprint?ArticleNumber=000190408&AccessLevel=10&Lang=en",
+        "cve_ids": [
+            "CVE-2021-21568",
+            "CVE-2021-21592",
+            "CVE-2021-21594",
+            "CVE-2021-21595",
+            "CVE-2021-21599",
+            "CVE-2021-36278",
+            "CVE-2021-36279",
+            "CVE-2021-36281",
+            "CVE-2021-36282"
+        ]
+    },
+    {
+        "article_id": "000191265",
+        "title": "DSA-2021-158: Dell PowerScale OneFS Security Update for Multiple Vulnerabilities",
+        "severity": "High",
+        "publish_first": "2021-09-07T00:18:22",
+        "publish_last": "2022-07-19T12:32:26",
+        "dsa_url": "https://www.dell.com/support/kbdoc/en-us/000191265/dsa-2021-158-dell-powerscale-onefs-security-update-for-multiple-vulnerabilities",
+        "kb_print_url": "https://www.dell.com/support/kbdoc/en-us/article/lkbprint?ArticleNumber=000191265&AccessLevel=10&Lang=en",
+        "cve_ids": [
+            "CVE-2020-26198",
+            "CVE-2020-5366",
+            "CVE-2021-21561",
+            "CVE-2021-36280",
+            "OPENSSHADVISORY"
+        ]
+    },
+    {
+        "article_id": "000191604",
+        "title": "DSA-2021-172: Dell Isilon InsightIQ Security Update for a Proprietary Component Vulnerability",
+        "severity": "High",
+        "publish_first": "2021-09-17T00:07:23",
+        "publish_last": "2021-09-17T14:16:59",
+        "dsa_url": "https://www.dell.com/support/kbdoc/en-us/000191604/dsa-2021-172-dell-isilon-insightiq-security-update-for-a-proprietary-component-vulnerability",
+        "kb_print_url": "https://www.dell.com/support/kbdoc/en-us/article/lkbprint?ArticleNumber=000191604&AccessLevel=10&Lang=en",
+        "cve_ids": [
+            "CVE-2021-36298"
+        ]
+    },
+    {
+        "article_id": "000192046",
+        "title": "DSA-2021-180: Dell PowerScale OneFS Security Update for Multiple Vulnerabilities.",
+        "severity": "Medium",
+        "publish_first": "2021-09-30T08:06:54",
+        "publish_last": "2022-02-15T23:43:08",
+        "dsa_url": "https://www.dell.com/support/kbdoc/en-us/000192046/dsa-2021-180-dell-powerscale-onefs-security-update-for-multiple-vulnerabilities",
+        "kb_print_url": "https://www.dell.com/support/kbdoc/en-us/article/lkbprint?ArticleNumber=000192046&AccessLevel=10&Lang=en",
+        "cve_ids": [
+            "CVE-2021-29626",
+            "CVE-2021-36305"
+        ]
+    },
+    {
+        "article_id": "000193005",
+        "title": "DSA-2021-201: Dell PowerScale OneFS Security Update for Multiple Vulnerabilities",
+        "severity": "Critical",
+        "publish_first": "2021-10-28T14:43:20",
+        "publish_last": "2022-02-15T23:46:10",
+        "dsa_url": "https://www.dell.com/support/kbdoc/en-us/000193005/dsa-2021-201-dell-powerscale-onefs-security-update-for-multiple-vulnerabilities",
+        "kb_print_url": "https://www.dell.com/support/kbdoc/en-us/article/lkbprint?ArticleNumber=000193005&AccessLevel=10&Lang=en",
+        "cve_ids": [
+            "CVE-2019-20907",
+            "CVE-2021-21528",
+            "CVE-2021-36315"
+        ]
+    },
+    {
+        "article_id": "000194157",
+        "title": "DSA-2021-243: Dell PowerScale OneFS Contains Security Update for Multiple Vulnerabilities.",
+        "severity": "High",
+        "publish_first": "2021-12-05T20:45:36",
+        "publish_last": "2022-02-15T23:47:11",
+        "dsa_url": "https://www.dell.com/support/kbdoc/en-us/000194157/dsa-2021-243-dell-powerscale-onefs-contains-security-update-for-multiple-third-party-component-vulnerabilities",
+        "kb_print_url": "https://www.dell.com/support/kbdoc/en-us/article/lkbprint?ArticleNumber=000194157&AccessLevel=10&Lang=en",
+        "cve_ids": [
+            "CVE-2020-12357",
+            "CVE-2020-12360",
+            "CVE-2021-22946",
+            "CVE-2021-23336",
+            "CVE-2021-36350",
+            "CVE-2021-3712"
+        ]
+    },
+    {
+        "article_id": "000195189",
+        "title": "DSA-2022-011: Dell Isilon InsightIQ Security Update for an OpenSSL Vulnerability",
+        "severity": "Medium",
+        "publish_first": "2022-01-12T18:20:53",
+        "publish_last": "2022-01-14T14:05:00",
+        "dsa_url": "https://www.dell.com/support/kbdoc/en-us/000195189/dsa-2022-011-dell-insightiq-security-update-for-an-openssl-vulnerability",
+        "kb_print_url": "https://www.dell.com/support/kbdoc/en-us/article/lkbprint?ArticleNumber=000195189&AccessLevel=10&Lang=en",
+        "cve_ids": [
+            "CVE-2021-3712"
+        ]
+    },
+    {
+        "article_id": "000195815",
+        "title": "DSA-2022-002: Dell EMC PowerScale OneFS Security Update for Multiple Vulnerabilities",
+        "severity": "High",
+        "publish_first": "2022-01-31T13:40:34",
+        "publish_last": "2022-01-31T14:57:03",
+        "dsa_url": "https://www.dell.com/support/kbdoc/en-us/000195815/dsa-2022-002-dell-emc-powerscale-onefs-security-update-for-multiple-vulnerabilities",
+        "kb_print_url": "https://www.dell.com/support/kbdoc/en-us/article/lkbprint?ArticleNumber=000195815&AccessLevel=10&Lang=en",
+        "cve_ids": [
+            "CVE-2018-18751",
+            "CVE-2021-34798",
+            "CVE-2021-3712",
+            "CVE-2022-22549",
+            "CVE-2022-22550",
+            "CVE-2022-22559",
+            "CVE-2022-22560",
+            "CVE-2022-22561",
+            "CVE-2022-22562"
+        ]
+    },
+    {
+        "article_id": "000196009",
+        "title": "DSA-2022-024: Dell EMC PowerScale OneFS Security Update for Multiple Vulnerabilities",
+        "severity": "Critical",
+        "publish_first": "2022-02-04T15:56:28",
+        "publish_last": "2022-11-30T08:31:07",
+        "dsa_url": "https://www.dell.com/support/kbdoc/en-us/000196009/dsa-2022-024-dell-emc-powerscale-onefs-security-update-for-multiple-vulnerabilities",
+        "kb_print_url": "https://www.dell.com/support/kbdoc/en-us/article/lkbprint?ArticleNumber=000196009&AccessLevel=10&Lang=en",
+        "cve_ids": [
+            "CVE-2017-12613",
+            "CVE-2022-23159",
+            "CVE-2022-23160",
+            "CVE-2022-23161",
+            "CVE-2022-23163",
+            "CVE-2022-24411",
+            "CVE-2022-24412",
+            "CVE-2022-24413"
+        ]
+    },
+    {
+        "article_id": "000196499",
+        "title": "DSA-2022-050: Dell InsightIQ Security Update for a Polkit Vulnerability",
+        "severity": "High",
+        "publish_first": "2022-02-18T18:39:24",
+        "publish_last": "2022-07-19T13:44:01",
+        "dsa_url": "https://www.dell.com/support/kbdoc/en-us/000196499/dsa-2022-050",
+        "kb_print_url": "https://www.dell.com/support/kbdoc/en-us/article/lkbprint?ArticleNumber=000196499&AccessLevel=10&Lang=en",
+        "cve_ids": [
+            "CVE-2021-4034"
+        ]
+    },
+    {
+        "article_id": "000197991",
+        "title": "DSA-2022-057: Dell EMC PowerScale OneFS Security Update for Multiple Vulnerabilities.",
+        "severity": "Critical",
+        "publish_first": "2022-04-01T02:55:00",
+        "publish_last": "2022-04-04T18:16:59",
+        "dsa_url": "https://www.dell.com/support/kbdoc/en-us/000197991/dell-emc-powerscale-onefs-security-update-for-multiple-component-vulnerabilities",
+        "kb_print_url": "https://www.dell.com/support/kbdoc/en-us/article/lkbprint?ArticleNumber=000197991&AccessLevel=10&Lang=en",
+        "cve_ids": [
+            "CVE-2022-22563",
+            "CVE-2022-24428",
+            "CVE-2022-26851",
+            "CVE-2022-26852",
+            "CVE-2022-26854",
+            "CVE-2022-26855"
+        ]
+    },
+    {
+        "article_id": "000200128",
+        "title": "DSA-2022-082: Dell PowerScale OneFS Security Weak Password Requirement Vulnerability",
+        "severity": "High",
+        "publish_first": "2022-05-26T12:50:03",
+        "publish_last": "2023-06-27T20:23:14",
+        "dsa_url": "https://www.dell.com/support/kbdoc/en-us/000200128/dsa-2022-082-dell-emc-powerscale-onefs-security-update",
+        "kb_print_url": "https://www.dell.com/support/kbdoc/en-us/article/lkbprint?ArticleNumber=000200128&AccessLevel=10&Lang=en",
+        "cve_ids": [
+            "CVE-2022-29098"
+        ]
+    },
+    {
+        "article_id": "000200681",
+        "title": "DSA-2022-118: Dell EMC PowerScale OneFS Security Update",
+        "severity": "Critical",
+        "publish_first": "2022-07-12T12:00:03",
+        "publish_last": "2023-06-23T15:02:32",
+        "dsa_url": "https://www.dell.com/support/kbdoc/en-us/000200681/dsa-2022-118-dell-emc-powerscale-onefs-security-update",
+        "kb_print_url": "https://www.dell.com/support/kbdoc/en-us/article/lkbprint?ArticleNumber=000200681&AccessLevel=10&Lang=en",
+        "cve_ids": [
+            "CVE-2013-0340",
+            "CVE-2018-20843",
+            "CVE-2019-15903",
+            "CVE-2021-45960",
+            "CVE-2021-46143",
+            "CVE-2022-0778",
+            "CVE-2022-22822",
+            "CVE-2022-22823",
+            "CVE-2022-22824",
+            "CVE-2022-22825",
+            "CVE-2022-22826",
+            "CVE-2022-22827",
+            "CVE-2022-23852",
+            "CVE-2022-23990",
+            "CVE-2022-25235",
+            "CVE-2022-25236",
+            "CVE-2022-25313",
+            "CVE-2022-25314",
+            "CVE-2022-25315",
+            "CVE-2022-31229",
+            "CVE-2022-31230"
+        ]
+    },
+    {
+        "article_id": "000201094",
+        "title": "DSA-2022-149: Dell PowerScale OneFS Security Update for Multiple Vulnerabilities",
+        "severity": "Medium",
+        "publish_first": "2022-06-30T14:35:45",
+        "publish_last": "2023-06-20T19:27:11",
+        "dsa_url": "https://www.dell.com/support/kbdoc/en-us/000201094/dsa-2022-149-dell-emc-powerscale-onefs-security-update",
+        "kb_print_url": "https://www.dell.com/support/kbdoc/en-us/article/lkbprint?ArticleNumber=000201094&AccessLevel=10&Lang=en",
+        "cve_ids": [
+            "CVE-2013-0340",
+            "CVE-2018-20843",
+            "CVE-2019-15903",
+            "CVE-2019-20388",
+            "CVE-2020-24977",
+            "CVE-2020-7595",
+            "CVE-2021-3516",
+            "CVE-2021-3517",
+            "CVE-2021-3518",
+            "CVE-2021-3537",
+            "CVE-2021-3541",
+            "CVE-2021-45960",
+            "CVE-2021-46143",
+            "CVE-2022-22822",
+            "CVE-2022-22823",
+            "CVE-2022-22824",
+            "CVE-2022-22825",
+            "CVE-2022-22826",
+            "CVE-2022-22827",
+            "CVE-2022-23308",
+            "CVE-2022-23852",
+            "CVE-2022-23990",
+            "CVE-2022-25235",
+            "CVE-2022-25236",
+            "CVE-2022-25313",
+            "CVE-2022-25314",
+            "CVE-2022-25315",
+            "CVE-2022-31237",
+            "CVE-2022-31238",
+            "CVE-2022-31239",
+            "CVE-2022-32480",
+            "CVE-2022-33932"
+        ]
+    },
+    {
+        "article_id": "000202171",
+        "title": "DSA-2022-172: Dell PowerScale OneFS Security Update for Multiple Vulnerabilities",
+        "severity": "High",
+        "publish_first": "2022-08-04T13:05:07",
+        "publish_last": "2023-06-08T18:51:00",
+        "dsa_url": "https://www.dell.com/support/kbdoc/en-us/000202171/dsa-2022-172-dell-powerscale-onefs-security-update-for-multiple-vulnerabilities",
+        "kb_print_url": "https://www.dell.com/support/kbdoc/en-us/article/lkbprint?ArticleNumber=000202171&AccessLevel=10&Lang=en",
+        "cve_ids": [
+            "CVE-2022-34369",
+            "CVE-2022-34371",
+            "CVE-2022-34378"
+        ]
+    },
+    {
+        "article_id": "000202887",
+        "title": "DSA-2022-215: Dell PowerScale OneFS Security Update for Multiple Third-Party Component Vulnerabilities",
+        "severity": "High",
+        "publish_first": "2022-09-06T00:00:00",
+        "publish_last": "2022-10-05T13:48:47",
+        "dsa_url": "https://www.dell.com/support/kbdoc/en-us/000202887/dsa-2022-215-dell-emc-powerscale-onefs-security-update-for-multiple-third-party-component-vulnerabilities",
+        "kb_print_url": "https://www.dell.com/support/kbdoc/en-us/article/lkbprint?ArticleNumber=000202887&AccessLevel=10&Lang=en",
+        "cve_ids": [
+            "CVE-2016-7543",
+            "CVE-2016-9401",
+            "CVE-2019-18276",
+            "CVE-2019-9924"
+        ]
+    },
+    {
+        "article_id": "000204053",
+        "title": "DSA-2022-245: Dell PowerScale OneFS Security Update for Multiple Security Updates",
+        "severity": "Critical",
+        "publish_first": "2022-10-13T00:00:00",
+        "publish_last": "2023-02-02T13:27:59",
+        "dsa_url": "https://www.dell.com/support/kbdoc/en-us/000204053/dsa-2022-245-dell-emc-powerscale-onefs-security-update-for-multiple-security-updates",
+        "kb_print_url": "https://www.dell.com/support/kbdoc/en-us/article/lkbprint?ArticleNumber=000204053&AccessLevel=10&Lang=en",
+        "cve_ids": [
+            "CVE-2013-4122",
+            "CVE-2019-14553",
+            "CVE-2019-14584",
+            "CVE-2019-19906",
+            "CVE-2020-0587",
+            "CVE-2020-0588",
+            "CVE-2020-0590",
+            "CVE-2020-0591",
+            "CVE-2020-0592",
+            "CVE-2020-0593",
+            "CVE-2020-12357",
+            "CVE-2020-12358",
+            "CVE-2020-12360",
+            "CVE-2020-24486",
+            "CVE-2020-24511",
+            "CVE-2020-24512",
+            "CVE-2020-8696",
+            "CVE-2020-8705",
+            "CVE-2020-8738",
+            "CVE-2020-8739",
+            "CVE-2020-8740",
+            "CVE-2020-8755",
+            "CVE-2020-8764",
+            "CVE-2021-00147",
+            "CVE-2021-0060",
+            "CVE-2021-0092",
+            "CVE-2021-0093",
+            "CVE-2021-0099",
+            "CVE-2021-0103",
+            "CVE-2021-0107",
+            "CVE-2021-0111",
+            "CVE-2021-0114",
+            "CVE-2021-0115",
+            "CVE-2021-0116",
+            "CVE-2021-0117",
+            "CVE-2021-0118",
+            "CVE-2021-0124",
+            "CVE-2021-0125",
+            "CVE-2021-0127",
+            "CVE-2021-0144",
+            "CVE-2021-0148",
+            "CVE-2021-28210",
+            "CVE-2021-28211",
+            "CVE-2021-36306",
+            "CVE-2021-36307",
+            "CVE-2021-36308",
+            "CVE-2021-36310",
+            "CVE-2021-36319",
+            "CVE-2021-3711",
+            "CVE-2021-3712",
+            "CVE-2022-24407",
+            "CVE-2022-34437",
+            "CVE-2022-34438",
+            "CVE-2022-34439"
+        ]
+    },
+    {
+        "article_id": "000205618",
+        "title": "DSA-2022-271: Dell PowerScale OneFS Security Updates for Multiple Security Vulnerabilities",
+        "severity": "High",
+        "publish_first": "2022-11-21T17:22:56",
+        "publish_last": "2023-02-13T13:57:27",
+        "dsa_url": "https://www.dell.com/support/kbdoc/en-us/000205618/dsa-2022-271",
+        "kb_print_url": "https://www.dell.com/support/kbdoc/en-us/article/lkbprint?ArticleNumber=000205618&AccessLevel=10&Lang=en",
+        "cve_ids": [
+            "CVE-2013-4122",
+            "CVE-2019-19906",
+            "CVE-2022-23089",
+            "CVE-2022-23091",
+            "CVE-2022-24407",
+            "CVE-2022-33934",
+            "CVE-2022-34438",
+            "CVE-2022-34439",
+            "CVE-2022-34444",
+            "CVE-2022-34445",
+            "CVE-2022-34454"
+        ]
+    },
+    {
+        "article_id": "000206357",
+        "title": "DSA-2022-295: Dell PowerScale OneFS Security Updates for Multiple Security Vulnerabilities",
+        "severity": "High",
+        "publish_first": "2022-12-13T04:21:27",
+        "publish_last": "2022-12-22T11:15:59",
+        "dsa_url": "https://www.dell.com/support/kbdoc/en-us/000206357/dell-emc-powerscale-onefs-security-updates-for-multiple-security-vulnerabilities",
+        "kb_print_url": "https://www.dell.com/support/kbdoc/en-us/article/lkbprint?ArticleNumber=000206357&AccessLevel=10&Lang=en",
+        "cve_ids": [
+            "CVE-2020-26137",
+            "CVE-2020-7212",
+            "CVE-2021-33503",
+            "CVE-2021-45444",
+            "CVE-2022-23090",
+            "CVE-2022-45095",
+            "CVE-2022-45096",
+            "CVE-2022-45097",
+            "CVE-2022-45098",
+            "CVE-2022-45099",
+            "CVE-2022-45100",
+            "CVE-2022-45101"
+        ]
+    },
+    {
+        "article_id": "000206927",
+        "title": "DSA-2022-323: Dell PowerScale OneFS Security Updates for Multiple Security Vulnerabilities",
+        "severity": "Critical",
+        "publish_first": "2022-12-22T17:18:18",
+        "publish_last": "2022-12-22T17:48:05",
+        "dsa_url": "https://www.dell.com/support/kbdoc/en-us/000206927/dsa-2022-323-dell-emc-powerscale-onefs-security-updates-for-multiple-security-vulnerabilities",
+        "kb_print_url": "https://www.dell.com/support/kbdoc/en-us/article/lkbprint?ArticleNumber=000206927&AccessLevel=10&Lang=en",
+        "cve_ids": [
+            "CVE-2022-27778",
+            "CVE-2022-27779",
+            "CVE-2022-27780",
+            "CVE-2022-27781",
+            "CVE-2022-27782",
+            "CVE-2022-30115",
+            "CVE-2022-32205",
+            "CVE-2022-32206",
+            "CVE-2022-32207",
+            "CVE-2022-32208",
+            "CVE-2022-37434",
+            "CVE-2022-40674",
+            "CVE-2022-46679"
+        ]
+    },
+    {
+        "article_id": "000207863",
+        "title": "DSA-2023-001: Dell PowerScale OneFS Security Updates for Multiple Security Vulnerabilities",
+        "severity": "High",
+        "publish_first": "2023-01-31T00:00:00",
+        "publish_last": "2023-07-10T20:05:00",
+        "dsa_url": "https://www.dell.com/support/kbdoc/en-us/000207863/dell-powerscale-onefs-security-updates-for-multiple-security",
+        "kb_print_url": "https://www.dell.com/support/kbdoc/en-us/article/lkbprint?ArticleNumber=000207863&AccessLevel=10&Lang=en",
+        "cve_ids": [
+            "CVE-2023-22572",
+            "CVE-2023-22573",
+            "CVE-2023-22574",
+            "CVE-2023-22575"
+        ]
+    },
+    {
+        "article_id": "000209895",
+        "title": "DSA-2023-035: Dell PowerScale OneFS Security Updates for Multiple Security Vulnerabilities",
+        "severity": "High",
+        "publish_first": "2023-02-28T00:00:00",
+        "publish_last": "2023-05-29T12:09:45",
+        "dsa_url": "https://www.dell.com/support/kbdoc/en-us/000209895/dell-emc-powerscale-onefs-security-updates-for-multiple-security",
+        "kb_print_url": "https://www.dell.com/support/kbdoc/en-us/article/lkbprint?ArticleNumber=000209895&AccessLevel=10&Lang=en",
+        "cve_ids": [
+            "CVE-2020-10735",
+            "CVE-2021-0153",
+            "CVE-2021-0154",
+            "CVE-2021-0155",
+            "CVE-2021-0159",
+            "CVE-2021-0188",
+            "CVE-2021-0189",
+            "CVE-2021-0190",
+            "CVE-2021-21131",
+            "CVE-2021-28496",
+            "CVE-2021-28500",
+            "CVE-2021-28501",
+            "CVE-2021-28503",
+            "CVE-2021-28506",
+            "CVE-2021-28507",
+            "CVE-2021-33060",
+            "CVE-2021-33103",
+            "CVE-2021-33122",
+            "CVE-2021-33123",
+            "CVE-2021-33124",
+            "CVE-2022-0004",
+            "CVE-2022-0778",
+            "CVE-2022-21123",
+            "CVE-2022-21125",
+            "CVE-2022-21127",
+            "CVE-2022-21166",
+            "CVE-2022-21180",
+            "CVE-2022-40304",
+            "CVE-2023-23689",
+            "CVE-2023-25536",
+            "CVE-2023-25540"
+        ]
+    },
+    {
+        "article_id": "000211539",
+        "title": "DSA-2023-102: Dell EMC PowerScale OneFS Security Updates for Multiple Security Vulnerabilities",
+        "severity": "Critical",
+        "publish_first": "2023-03-30T00:00:00",
+        "publish_last": "2023-06-22T08:03:59",
+        "dsa_url": "https://www.dell.com/support/kbdoc/en-us/000211539/dell-emc-powerscale-onefs-security",
+        "kb_print_url": "https://www.dell.com/support/kbdoc/en-us/article/lkbprint?ArticleNumber=000211539&AccessLevel=10&Lang=en",
+        "cve_ids": [
+            "CVE-2019-15876",
+            "CVE-2022-26377",
+            "CVE-2022-28330",
+            "CVE-2022-28614",
+            "CVE-2022-28615",
+            "CVE-2022-29404",
+            "CVE-2022-30522",
+            "CVE-2022-30556",
+            "CVE-2022-31813",
+            "CVE-2023-25940",
+            "CVE-2023-25941",
+            "CVE-2023-25942"
+        ]
+    },
+    {
+        "article_id": "000212709",
+        "title": "DSA-2023-136: Dell PowerScale OneFS Security Updates for Multiple Security Vulnerabilities",
+        "severity": "High",
+        "publish_first": "2023-05-02T00:00:00",
+        "publish_last": "2023-06-13T07:16:38",
+        "dsa_url": "https://www.dell.com/support/kbdoc/en-us/000212709/dsa-2023-136-dell-powerscale-onefs-security-updates-for-multiple-security-vulnerabilities",
+        "kb_print_url": "https://www.dell.com/support/kbdoc/en-us/article/lkbprint?ArticleNumber=000212709&AccessLevel=10&Lang=en",
+        "cve_ids": [
+            "CVE-2022-3715",
+            "CVE-2022-4304",
+            "CVE-2023-0215",
+            "CVE-2023-0286"
+        ]
+    },
+    {
+        "article_id": "000214232",
+        "title": "DSA-2023-159: Dell PowerScale OneFS Security Update for Multiple Third-Party Component Vulnerabilities",
+        "severity": "High",
+        "publish_first": "2023-06-02T00:00:00",
+        "publish_last": "2023-08-14T09:06:10",
+        "dsa_url": "https://www.dell.com/support/kbdoc/en-us/000214232/dell-emc-powerscale-onefs-security-update-for-multiple-third-party-component-vulnerabilities",
+        "kb_print_url": "https://www.dell.com/support/kbdoc/en-us/article/lkbprint?ArticleNumber=000214232&AccessLevel=10&Lang=en",
+        "cve_ids": [
+            "CVE-2006-20001",
+            "CVE-2021-20227",
+            "CVE-2021-36690",
+            "CVE-2022-24963",
+            "CVE-2022-28331",
+            "CVE-2022-35737",
+            "CVE-2022-36760",
+            "CVE-2022-37436",
+            "CVE-2022-43680",
+            "CVE-2022-46908"
+        ]
+    },
+    {
+        "article_id": "000215747",
+        "title": "DSA-2023-205: Security Update for Dell PowerScale OneFS for Multiple Vulnerabilities",
+        "severity": "High",
+        "publish_first": "2023-07-12T15:42:46",
+        "publish_last": "2023-08-16T06:35:00",
+        "dsa_url": "https://www.dell.com/support/kbdoc/en-us/000215747/dsa-2023-205-security-update-for-dell-powerscale-onefs-for-multiple-vulnerabilities",
+        "kb_print_url": "https://www.dell.com/support/kbdoc/en-us/article/lkbprint?ArticleNumber=000215747&AccessLevel=10&Lang=en",
+        "cve_ids": [
+            "CVE-2021-0153",
+            "CVE-2021-0154",
+            "CVE-2021-0155",
+            "CVE-2021-0159",
+            "CVE-2021-0188",
+            "CVE-2021-0189",
+            "CVE-2021-0190",
+            "CVE-2021-20235",
+            "CVE-2021-21576",
+            "CVE-2021-21577",
+            "CVE-2021-21578",
+            "CVE-2021-21579",
+            "CVE-2021-21580",
+            "CVE-2021-21581",
+            "CVE-2021-33103",
+            "CVE-2021-33122",
+            "CVE-2021-33123",
+            "CVE-2021-33124",
+            "CVE-2021-36299",
+            "CVE-2021-36300",
+            "CVE-2021-36301",
+            "CVE-2021-36347",
+            "CVE-2021-36348",
+            "CVE-2021-3712",
+            "CVE-2022-0778",
+            "CVE-2022-26343",
+            "CVE-2022-32231",
+            "CVE-2022-34376",
+            "CVE-2022-34377",
+            "CVE-2022-34406",
+            "CVE-2022-34407",
+            "CVE-2022-34408",
+            "CVE-2022-34409",
+            "CVE-2022-34410",
+            "CVE-2022-34411",
+            "CVE-2022-34412",
+            "CVE-2022-34413",
+            "CVE-2022-34414",
+            "CVE-2022-34415",
+            "CVE-2022-34416",
+            "CVE-2022-34417",
+            "CVE-2022-34418",
+            "CVE-2022-34419",
+            "CVE-2022-34420",
+            "CVE-2022-34421",
+            "CVE-2022-34422",
+            "CVE-2022-34423",
+            "CVE-2022-34435",
+            "CVE-2022-44640"
+        ]
+    },
+    {
+        "article_id": "000216717",
+        "title": "DSA-2023-269: Security Update for Dell PowerScale OneFS for Multiple Security Vulnerabilities",
+        "severity": "High",
+        "publish_first": "2023-08-14T06:52:56",
+        "publish_last": "2023-08-16T12:42:14",
+        "dsa_url": "https://www.dell.com/support/kbdoc/en-us/000216717/dsa-2023-269-security-update-for-dell-powerscale-onefs-for-multiple-security-vulnerabilities",
+        "kb_print_url": "https://www.dell.com/support/kbdoc/en-us/article/lkbprint?ArticleNumber=000216717&AccessLevel=10&Lang=en",
+        "cve_ids": [
+            "CVE-2006-20001",
+            "CVE-2022-23491",
+            "CVE-2022-37436",
+            "CVE-2023-32486",
+            "CVE-2023-32487",
+            "CVE-2023-32488",
+            "CVE-2023-32489",
+            "CVE-2023-32490",
+            "CVE-2023-32491",
+            "CVE-2023-32492",
+            "CVE-2023-32493",
+            "CVE-2023-32494",
+            "CVE-2023-32495"
+        ]
+    },
+    {
+        "article_id": "000216916",
+        "title": "DSA-2023-277: Security Update for Dell PowerScale OneFS for Improper Privilege Management Vulnerability",
+        "severity": "High",
+        "publish_first": "2023-08-29T00:00:00",
+        "publish_last": "2023-08-29T09:33:00",
+        "dsa_url": "https://www.dell.com/support/kbdoc/en-us/000216916/dsa-2023-277-security-update-for-dell-powerscale-onefs-for-improper-privilege-management-vulnerability",
+        "kb_print_url": "https://www.dell.com/support/kbdoc/en-us/article/lkbprint?ArticleNumber=000216916&AccessLevel=10&Lang=en",
+        "cve_ids": [
+            "CVE-2023-32457"
+        ]
+    }
+]
