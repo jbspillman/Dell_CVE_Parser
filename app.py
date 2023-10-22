@@ -3,6 +3,7 @@ import datetime
 from downloader import download_advisories, download_dsa_articles
 from parse_advisories import create_advisories_products, parse_dsa_articles
 
+
 current_time_stamp = datetime.datetime.now()
 date_stamp = current_time_stamp.strftime("%Y%m%d")
 script_path = os.path.dirname(os.path.realpath(__file__))
